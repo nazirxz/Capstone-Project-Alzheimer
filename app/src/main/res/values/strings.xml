@@ -3,4 +3,6 @@
     <string name="apps_name">Apps Name</string>
     <string name="onboarding_info">Kesusahan merawat pasien alzheimer ?</string>
     <string name="onboarding_button">Getting Started</string>
+    <string name="signin_header">Sign In</string>
+    <string name="login_signin">Sign In</string>
 </resources>
