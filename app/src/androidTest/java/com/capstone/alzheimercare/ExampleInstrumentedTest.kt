@@ -1,4 +1,4 @@
-package com.nazirman.alzheimercare
+package com.capstone.alzheimercare
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

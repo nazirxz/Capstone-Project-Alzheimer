@@ -1,4 +1,4 @@
-package com.nazirman.alzheimercare
+package com.capstone.alzheimercare
 
 import org.junit.Test
 

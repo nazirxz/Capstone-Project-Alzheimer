@@ -1,4 +1,4 @@
-package com.nazirman.alzheimercare
+package com.capstone.alzheimercare
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
