@@ -8,17 +8,20 @@
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/ic_guide_selected.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/ic_home_normal.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/ic_home_selected.xml" value="0.21875" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/ic_picture_empty.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/ic_profile_normal.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/ic_profile_selected.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/shape_rectangle_8_ffc700.xml" value="0.21927083333333333" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/shape_rectangle_9_ffc700.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/shape_rectangle_outline_8_020202.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/font/poppins.xml" value="0.2287179487179487" />
-        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_caretaker.xml" value="0.14" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_caretaker.xml" value="0.18" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_onboarding.xml" value="0.33" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_onboarding.xml" value="0.5" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_patient.xml" value="0.2" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_signup.xml" value="0.20260416666666667" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_home_caretaker.xml" value="0.25" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/menu/bottom_nav_menu_caretaker.xml" value="0.20260416666666667" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/menu/bottom_nav_menu_patient.xml" value="0.20260416666666667" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/menu/bottom_nav_menu_staff.xml" value="0.20260416666666667" />
