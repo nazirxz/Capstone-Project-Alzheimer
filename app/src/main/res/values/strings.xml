@@ -22,4 +22,5 @@
     <string name="save_changes">Save Changes</string>
     <string name="profile_blood_type">Blood Type</string>
     <string name="article_guide">Name of article</string>
+    <string name="signup_header">Sign Up</string>
 </resources>
