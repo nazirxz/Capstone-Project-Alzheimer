@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable-v24/back_shape.xml" value="0.21875" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable-v24/ic_camera_alt_black_24dp.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/bottom_nav_icon_color_selector.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/ic_guide_normal.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/ic_guide_selected.xml" value="0.21875" />
@@ -15,13 +17,23 @@
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/shape_rectangle_9_ffc700.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/shape_rectangle_outline_8_020202.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/font/poppins.xml" value="0.2287179487179487" />
-        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_caretaker.xml" value="0.18" />
-        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_caretaker.xml" value="0.22" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_onboarding.xml" value="0.22" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_patient.xml" value="0.2" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_signup.xml" value="0.20260416666666667" />
-        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_home_caretaker.xml" value="0.25" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_caretaker_guide.xml" value="0.22" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_caretaker_guide_detail.xml" value="0.22" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_caretaker_home.xml" value="0.25" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_caretaker_profile.xml" value="0.25" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_caretaker_update_profile.xml" value="0.22" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_home_caretaker.xml" value="0.22" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_patient_profile.xml" value="0.20260416666666667" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_patient_update_profile.xml" value="0.2" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_staff_profile.xml" value="0.18697916666666667" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/item_guide.xml" value="0.25" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/item_task.xml" value="0.20260416666666667" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/menu/bottom_nav_menu_caretaker.xml" value="0.20260416666666667" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/menu/bottom_nav_menu_patient.xml" value="0.20260416666666667" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/menu/bottom_nav_menu_staff.xml" value="0.20260416666666667" />

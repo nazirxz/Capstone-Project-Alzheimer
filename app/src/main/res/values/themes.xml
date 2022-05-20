@@ -46,12 +46,6 @@
         <item name="android:textSize">14sp</item>
     </style>
 
-    <style name="TextView.PoppinsNormal14sp1ABC9C">
-        <item name="android:fontFamily">@font/poppins</item>
-        <item name="android:textColor">#1ABC9C</item>
-        <item name="android:textSize">14sp</item>
-    </style>
-
     <style name="TextView.PoppinsNormal14sp8D92A3">
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textColor">#8D92A3</item>
@@ -80,6 +74,11 @@
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textColor">#020202</item>
         <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="inputText" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="boxStrokeColor">@color/gray</item>
     </style>
 
     <style name="Button"/>

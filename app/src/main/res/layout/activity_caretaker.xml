@@ -24,13 +24,13 @@
     <FrameLayout
         android:id="@+id/frame_container"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="414dp"
-        android:layout_height="670dp"
+        android:layout_width="460dp"
+        android:layout_height="692dp"
         app:layout_constraintBottom_toTopOf="@id/nav_view"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.307"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.018" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
