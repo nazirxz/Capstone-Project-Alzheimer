@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlzheimerCare">
         <activity
-            android:name="com.capstone.alzheimercare.MainActivity"
+            android:name="com.capstone.alzheimercare.ui.splash.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
