@@ -1,9 +1,9 @@
 package com.capstone.alzheimercare.utils
 
-import com.capstone.alzheimercare.data.source.local.entity.PatientEntity
-import com.capstone.alzheimercare.data.source.local.entity.CaretakerEntity
-import com.capstone.alzheimercare.data.source.remote.response.PatientResponse
-import com.capstone.alzheimercare.data.source.remote.response.CaretakerResponse
+import com.capstone.alzheimercare.network.source.local.entity.PatientEntity
+import com.capstone.alzheimercare.network.source.local.entity.CaretakerEntity
+import com.capstone.alzheimercare.network.source.remote.response.PatientResponse
+import com.capstone.alzheimercare.network.source.remote.response.CaretakerResponse
 import com.capstone.alzheimercare.domain.model.Patient
 import com.capstone.alzheimercare.domain.model.Caretaker
 

@@ -1,9 +1,8 @@
 package com.capstone.alzheimercare.domain.usecase
 
-import com.capstone.alzheimercare.data.Resource
+import com.capstone.alzheimercare.network.Resource
 import com.capstone.alzheimercare.domain.model.Patient
 import com.capstone.alzheimercare.domain.repository.IRepository
-import com.capstone.alzheimercare.domain.usecase.PatientUseCase
 import kotlinx.coroutines.flow.Flow
 
 class PatientInteractor(private val repository: IRepository) : PatientUseCase {

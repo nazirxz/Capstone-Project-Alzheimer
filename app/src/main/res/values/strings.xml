@@ -25,4 +25,31 @@
     <string name="profile_blood_type">Blood Type</string>
     <string name="article_guide">Name of article</string>
     <string name="signup_header">Sign Up</string>
+
+    <string name="email_not_found">Email not found</string>
+    <string name="exit_text">Do you want to exit right now?</string>
+    <string name="no">NO</string>
+    <string name="yes">YES</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="input_error_password">Less than 6 character</string>
+    <string name="input_error_email">Invalid Email Entered</string>
+    <string name="signup">Sign Up</string>
+    <string name="login_header">Sign in</string>
+
+    <string name="signup_full_name">Full Name</string>
+    <string name="signup_email">Email Address</string>
+    <string name="signup_password">Password</string>
+    <string name="signup_login">Already have an account ?</string>
+    <string name="now">now</string>
+    <string name="signup_loginclick">Sign In</string>
+    <string name="signup_repeat_password">Confirm Password</string>
+    <string name="email_used">Email already used</string>
+
+    <string name="signin_email">Email</string>
+    <string name="signin_password">Password</string>
+    <string name="signin_register">Didn\'t have an account?</string>
+    <string name="signin_registerclick">Sign In</string>
+
+
 </resources>

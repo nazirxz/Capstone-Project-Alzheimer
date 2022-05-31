@@ -1,6 +1,6 @@
 package com.capstone.alzheimercare.domain.usecase
 
-import com.capstone.alzheimercare.data.Resource
+import com.capstone.alzheimercare.network.Resource
 import com.capstone.alzheimercare.domain.model.Patient
 import kotlinx.coroutines.flow.Flow
 
