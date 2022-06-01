@@ -67,7 +67,7 @@
             android:id="@+id/etTask"
             style="@style/EditText.PoppinsNormal14sp8D92A3"
             android:layout_width="374dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:layout_marginTop="52dp"
             android:background="@drawable/shape_rectangle_outline_8_020202"
             android:hint="Enter a task to patient"
@@ -80,7 +80,7 @@
         <Button
             android:id="@+id/btnTime"
             android:layout_width="180dp"
-            android:layout_height="45dp"
+            android:layout_height="48dp"
             android:layout_marginTop="40dp"
             android:backgroundTint="@color/red"
             android:text="Select Time"
@@ -93,7 +93,7 @@
         <Button
             android:id="@+id/btnDate"
             android:layout_width="183dp"
-            android:layout_height="44dp"
+            android:layout_height="48dp"
             android:layout_marginTop="12dp"
             android:backgroundTint="@color/red"
             android:text="Select Date"

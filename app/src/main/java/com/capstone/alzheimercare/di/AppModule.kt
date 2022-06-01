@@ -1,6 +1,6 @@
 package com.capstone.alzheimercare.di
 
-import com.capstone.alzheimercare.domain.usecase.*
+import com.capstone.alzheimercare.core.domain.usecase.*
 import com.capstone.alzheimercare.ui.login.LoginViewModel
 import com.capstone.alzheimercare.ui.signup.SignUpViewModel
 import org.koin.android.viewmodel.dsl.viewModel

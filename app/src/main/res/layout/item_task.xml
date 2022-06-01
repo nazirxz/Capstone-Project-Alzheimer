@@ -4,8 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cv_item_record"
-    android:layout_width="match_parent"
+    android:layout_width="350dp"
     android:layout_height="wrap_content"
+    android:layout_marginStart="25dp"
     android:layout_marginVertical="12dp"
     app:cardCornerRadius="16dp">
 
@@ -29,7 +30,7 @@
         <TextView
             android:id="@+id/tv_date"
             style="@style/TextView.PoppinsNormal14sp8D92A3"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="4dp"
@@ -42,8 +43,8 @@
         <TextView
             android:id="@+id/tv_task"
             style="@style/TextView.PoppinsNormal22sp020202"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
             android:text="Task Name"

@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bluewhite">
+    android:background="@color/bluewhite"
+    tools:context=".ui.patient.home.HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvSubtitle"
+            android:id="@+id/tvDate"
             style="@style/TextView.PoppinsNormal14sp8D92A3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,7 +45,7 @@
             android:text="Hello, Patient's name"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvSubtitle" />
+            app:layout_constraintTop_toBottomOf="@+id/tvDate" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -64,6 +65,26 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:itemCount="7"
             tools:listitem="@layout/item_task" />
+
+        <TextView
+            android:id="@+id/tv_empty"
+            style="@style/TextView.PoppinsNormal16sp020202"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/empty_stories"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rcTask"
+            app:layout_constraintVertical_bias="0.356"
+            tools:visibility="visible" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

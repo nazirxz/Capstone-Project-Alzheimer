@@ -10,8 +10,8 @@ import androidx.lifecycle.lifecycleScope
 import com.capstone.alzheimercare.R
 import com.capstone.alzheimercare.databinding.ActivityLoginBinding
 import com.capstone.alzheimercare.ui.MyPreference
-import com.capstone.alzheimercare.ui.caretaker.CaretakerActivity
-import com.capstone.alzheimercare.ui.patient.PatientActivity
+import com.capstone.alzheimercare.ui.CaretakerActivity
+import com.capstone.alzheimercare.ui.caretaker.home.HomeFragment
 import com.capstone.alzheimercare.ui.signup.SignUpActivity
 import com.capstone.alzheimercare.utils.Utility.setColor
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -50,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
                             check = true
                             preference.setId(patient.id)
                             preference.setRole("Patient")
-                            startActivity(Intent(this, PatientActivity::class.java))
+                            startActivity(Intent(this, HomeFragment::class.java))
                             finish()
                         } else {
                             check = true
