@@ -9,32 +9,20 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0055d72-1fb6-482f-9e5d-0831bb5c3934" name="Default Changelist" comment="adding tasks database">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/scanner/ScannerFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/scanner/ScannerViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/task/CalendarHelper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_caretaker_scanner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_check_id.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    <list default="true" id="f0055d72-1fb6-482f-9e5d-0831bb5c3934" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/guide/DataClassGuide.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/guide/GuideFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/guide/ListGuideAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/guide/ListGuideDetail.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/guide/dummyGuide.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/gejalaawal.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_guide_detail.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/AlzheimerCare.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/AlzheimerCare.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/google-services.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/core/network/di/CoreModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/core/network/di/CoreModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/core/network/source/local/room/Database.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/core/network/source/local/room/Database.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/di/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/di/AppModule.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/CaretakerActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/CaretakerActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/task/AddTaskFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/login/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/login/LoginActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/signup/SignUpActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/signup/SignUpActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_caretaker_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_caretaker_add_task.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu_caretaker.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu_caretaker.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_caretaker_guide.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_caretaker_guide.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_caretaker_guide_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_caretaker_guide_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_guide.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_guide.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,10 +68,10 @@
       <list>
         <option value="resourceFile" />
         <option value="valueResourceFile" />
-        <option value="layoutResourceFile" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Object" />
+        <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -130,7 +118,7 @@
     <property name="android-custom-viewF:/Bangkit Project Capstone/Project/app/src/main/java/com/capstone/alzheimercare/ui/login/customview/PasswordEditText.kt_SELECTED" value="PasswordEditText" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/scanner" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/guide" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -138,11 +126,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Bangkit Project Capstone\Project\app\src\main\java\com\capstone\alzheimercare\ui\caretaker\guide" />
+      <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\drawable-v24" />
+      <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\drawable\guide" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\java\com\capstone\alzheimercare\ui\caretaker\scanner" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\layout" />
-      <recent name="F:\Bangkit Project Capstone\Project\app\src\main\java\com\capstone\alzheimercare\di" />
-      <recent name="F:\Bangkit Project Capstone\Project\app\src\main\java\com\capstone\alzheimercare\ui\login\customview" />
-      <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\anim" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\drawable" />
@@ -155,11 +143,11 @@
       <recent name="com.capstone.alzheimercare.network.source.remote" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.capstone.alzheimercare.ui.caretaker.guide" />
       <recent name="com.capstone.alzheimercare.ui.patient.home" />
       <recent name="com.capstone.alzheimercare" />
       <recent name="com.capstone.alzheimercare.ui.signup" />
       <recent name="com.capstone.alzheimercare.utils" />
-      <recent name="com.capstone.alzheimercare.domain.repository" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.capstone.alzheimercare.ui.caretaker.task" />

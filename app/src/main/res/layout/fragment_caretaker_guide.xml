@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bluewhite">
+    android:background="@color/bluewhite"
+    tools:context=".ui.caretaker.guide.GuideFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -29,7 +30,7 @@
             style="@style/TextView.PoppinsNormal14sp8D92A3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="10dp"
             android:text="Informasi mengenai alzheimer"
             app:layout_constraintEnd_toEndOf="@+id/tvTitle"
             app:layout_constraintHorizontal_bias="0.486"
@@ -40,9 +41,11 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcList"
-        android:layout_width="426dp"
-        android:layout_height="610dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
         android:clipChildren="false"
         android:clipToPadding="false"
         android:paddingEnd="16dp"

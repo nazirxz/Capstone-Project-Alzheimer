@@ -7,7 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginVertical="12dp"
-    app:cardCornerRadius="16dp">
+    app:cardCornerRadius="16dp"
+    tools:context=".ui.caretaker.guide.ListGuideAdapter">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/item_container"
@@ -17,12 +18,13 @@
         android:padding="15dp">
 
         <TextView
-            android:id="@+id/tv_item_date"
+            android:id="@+id/tv_item_name"
+            style="@style/TextView.PoppinsNormal14sp020202"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="1"
-            style="@style/TextView.PoppinsNormal14sp020202"
+            app:layout_constraintEnd_toStartOf="@+id/iv_item_picture"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@string/article_guide" />
@@ -37,11 +39,11 @@
             android:maxLines="3"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_item_date"
+            app:layout_constraintTop_toBottomOf="@id/tv_item_name"
             tools:text="@tools:sample/lorem/random" />
 
         <ImageView
-            android:id="@+id/imgGuide"
+            android:id="@+id/iv_item_picture"
             android:layout_width="184dp"
             android:layout_height="122dp"
             android:layout_marginStart="8dp"

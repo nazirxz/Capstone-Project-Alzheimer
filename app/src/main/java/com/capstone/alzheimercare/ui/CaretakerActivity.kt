@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.capstone.alzheimercare.R
 import com.capstone.alzheimercare.databinding.ActivityCaretakerBinding
+import com.capstone.alzheimercare.ui.caretaker.guide.GuideFragment
 import com.capstone.alzheimercare.ui.caretaker.scanner.ScannerFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -25,7 +26,7 @@ class CaretakerActivity : AppCompatActivity(), BottomNavigationView.OnNavigation
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.navigation_scanner -> loadFragment(ScannerFragment())
-            R.id.navigation_guide -> loadFragment()
+            R.id.navigation_guide -> loadFragment(GuideFragment())
         }
         return true
     }
@@ -38,7 +39,6 @@ class CaretakerActivity : AppCompatActivity(), BottomNavigationView.OnNavigation
                     .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit()
             }
-
             return true
         }
         return false
