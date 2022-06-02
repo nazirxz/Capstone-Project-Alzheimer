@@ -15,10 +15,11 @@ import java.util.concurrent.TimeUnit
 val databaseModule = module {
     factory { get<Database>().patientDao() }
     factory { get<Database>().caretakerDao() }
+    factory { get<Database>().taskDao() }
     single {
         Room.databaseBuilder(
             androidContext(),
-            Database::class.java, "Medical.db"
+            Database::class.java, "AlzheimerCare.db"
         ).fallbackToDestructiveMigration().build()
     }
 }
@@ -34,7 +35,7 @@ val networkModule = module {
 }
 
 val repositoryModule = module {
-    single { LocalDataSource(get(), get()) }
+    single { LocalDataSource(get(), get(),get()) }
     single { RemoteDataSource() }
     single<IRepository> { Repository(get(), get()) }
 }
