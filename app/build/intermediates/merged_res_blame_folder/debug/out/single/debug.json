@@ -1,0 +1,278 @@
+[
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_splash_screen.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_home_normal.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable\\ic_home_normal.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_camera_alt_black_24dp.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable-v24\\ic_camera_alt_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_patient.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\activity_patient.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_back_black_24dp.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable-v24\\ic_back_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable_bottom_nav_icon_color_selector.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable\\bottom_nav_icon_color_selector.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_onboarding.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\activity_onboarding.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\anim_fade_out.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\anim\\fade_out.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_caretaker_guide.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_caretaker_guide.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_guide_image.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_guide_image.png"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_guide_image.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_guide_image.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_guide_image.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_guide_image.png"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_alarm_on_24.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable\\ic_baseline_alarm_on_24.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_login.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_picture_empty.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable\\ic_picture_empty.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable_shape_rectangle_9_ffc700.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable\\shape_rectangle_9_ffc700.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_patient_profile.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_patient_profile.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_gejalaawal.jpeg.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable-v24\\gejalaawal.jpeg"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_caretaker_profile.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_caretaker_profile.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_guide_normal.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_guide_normal.png"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_item_task.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\item_task.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_guide_image.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_guide_image.png"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_guide_normal.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_guide_normal.png"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_nav_menu_patient.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\menu\\bottom_nav_menu_patient.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_caretaker_update_profile.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_caretaker_update_profile.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_item_guide.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\item_guide.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_guide_image.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_guide_image.png"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_check_id.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_check_id.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_guide_image.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_guide_image.png"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_guide_normal.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_guide_normal.png"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable_caretaking.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable\\caretaking.png"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\menu_bottom_nav_menu_caretaker.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\menu\\bottom_nav_menu_caretaker.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_item_guide_detail.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\item_guide_detail.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_guide_normal.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_guide_normal.png"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_profile_normal.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable\\ic_profile_normal.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\anim_slide_in.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\anim\\slide_in.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_user.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable\\ic_user.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_patient_home.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_patient_home.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_caretaker_add_task.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_caretaker_add_task.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_sign_up.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable_shape_rectangle_8_ffc700.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable\\shape_rectangle_8_ffc700.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\font_poppins.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\font\\poppins.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_patient_update_profile.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_patient_update_profile.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\anim_fade_in.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_guide_normal.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_guide_normal.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_caretaker_scanner.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_caretaker_scanner.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_back_shape.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable-v24\\back_shape.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable_shape_rectangle_outline_8_020202.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable\\shape_rectangle_outline_8_020202.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_caretaker.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\activity_caretaker.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_guide_image.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_guide_image.png"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_caretaker_guide_detail.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_caretaker_guide_detail.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\anim_slide_out.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\anim\\slide_out.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_guide_normal.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_guide_normal.png"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_guide_normal.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_guide_normal.png"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\merged_res\\debug\\drawable_logo.png.flat",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\drawable\\logo.png"
+    }
+]

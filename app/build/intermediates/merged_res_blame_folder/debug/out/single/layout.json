@@ -1,0 +1,78 @@
+[
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_patient.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\activity_patient.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_caretaker_profile.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_caretaker_profile.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_caretaker.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\activity_caretaker.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_patient_home.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_patient_home.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_caretaker_scanner.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_caretaker_scanner.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_caretaker_update_profile.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_caretaker_update_profile.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_patient_profile.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_patient_profile.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_check_id.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_check_id.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_task.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\item_task.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_patient_update_profile.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_patient_update_profile.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_guide.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\item_guide.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_caretaker_add_task.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_caretaker_add_task.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_caretaker_guide_detail.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_caretaker_guide_detail.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_up.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_caretaker_guide.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\fragment_caretaker_guide.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_guide_detail.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\item_guide_detail.xml"
+    },
+    {
+        "merged": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_onboarding.xml",
+        "source": "D:\\Jevon\\gBangkitDicoding\\capstone-project-alzheimer-nazirman\\app\\src\\main\\res\\layout\\activity_onboarding.xml"
+    }
+]

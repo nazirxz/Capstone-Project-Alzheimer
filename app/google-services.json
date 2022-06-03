@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "798634211377",
+    "project_id": "c22-ps200-db",
+    "storage_bucket": "c22-ps200-db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798634211377:android:822e2404205dedf97b7d10",
+        "android_client_info": {
+          "package_name": "com.capstone.alzheimercare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "798634211377-kpce4ovfnve75jhn0g8ovp31j078udh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtBz87xsbpszVMBMf8Dd5xIRvD30yIFuY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "798634211377-kpce4ovfnve75jhn0g8ovp31j078udh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
