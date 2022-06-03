@@ -47,9 +47,6 @@ class ScannerFragment : Fragment() {
                 fragment.arguments = bundle
                 activity?.navigateTo(fragment, R.id.frame)
 
-//                val intent = Intent(Intent.ACTION_VIEW)
-//                intent.data = Uri.parse(link)
-//                startActivity(intent)
             }
         }
     }

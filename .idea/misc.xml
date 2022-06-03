@@ -23,11 +23,11 @@
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/shape_rectangle_9_ffc700.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/drawable/shape_rectangle_outline_8_020202.xml" value="0.21875" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/font/poppins.xml" value="0.2287179487179487" />
-        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_caretaker.xml" value="0.22" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_caretaker.xml" value="0.33" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_onboarding.xml" value="0.22" />
-        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_patient.xml" value="0.1" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_patient.xml" value="0.67" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_sign_up.xml" value="0.1" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_signup.xml" value="0.20260416666666667" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
@@ -41,7 +41,7 @@
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_caretaker_update_profile.xml" value="0.22" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_check_id.xml" value="0.3625" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_home_caretaker.xml" value="0.22" />
-        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_patient_home.xml" value="0.25" />
+        <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_patient_home.xml" value="0.22" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_patient_profile.xml" value="0.20260416666666667" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_patient_update_profile.xml" value="0.22" />
         <entry key="..\:/Bangkit Project Capstone/Project/app/src/main/res/layout/fragment_staff_profile.xml" value="0.18697916666666667" />
