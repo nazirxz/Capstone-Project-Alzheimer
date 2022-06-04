@@ -32,6 +32,7 @@
     <string name="yes">YES</string>
     <string name="cancel">Cancel</string>
     <string name="ok">OK</string>
+    <string name="add_action">Select an Action</string>
     <string name="input_error_password">Less than 6 character</string>
     <string name="input_error_email">Invalid Email Entered</string>
     <string name="signup">Sign Up</string>

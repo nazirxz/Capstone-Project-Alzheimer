@@ -6,10 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.capstone.alzheimercare.R
 import com.capstone.alzheimercare.databinding.FragmentPatientProfileBinding
 import com.capstone.alzheimercare.ui.MyPreference
 import com.capstone.alzheimercare.ui.login.LoginActivity
 import com.capstone.alzheimercare.utils.Utility.convertEmpty
+import com.capstone.alzheimercare.utils.Utility.navigateTo
 import com.capstone.alzheimercare.utils.Utility.setImage
 import org.koin.android.viewmodel.ext.android.viewModel
 
@@ -42,9 +44,9 @@ class ProfileFragment : Fragment() {
                     binding.tvAddress.text = address.convertEmpty()
                     binding.tvGender.text = gender.convertEmpty()
                     binding.tvBlood.text = bloodType.convertEmpty()
-                    binding.ivPicture.setImage(picture)
                     binding.tvEmailProfile.text = email.convertEmpty()
                     binding.tvName.text = name.convertEmpty()
+                    binding.avatar.setImage(picture)
                 }
             }
         })
@@ -54,6 +56,9 @@ class ProfileFragment : Fragment() {
             val intent = Intent(activity, LoginActivity::class.java)
             startActivity(intent)
             activity?.finish()
+        }
+        binding.btnEdit.setOnClickListener {
+            activity?.navigateTo(UpdateProfileFragment(), R.id.frame)
         }
     }
     override fun onDestroyView() {
