@@ -1,15 +1,22 @@
 package com.capstone.alzheimercare.ui.patient.home
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.capstone.alzheimercare.databinding.FragmentPatientHomeBinding
 
-class HomeFragment : AppCompatActivity() {
-    private lateinit var binding : FragmentPatientHomeBinding
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = FragmentPatientHomeBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
+class HomeFragment : Fragment() {
+    private var _binding: FragmentPatientHomeBinding? = null
+    private val binding get() = _binding as FragmentPatientHomeBinding
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?,
+    ): View {
+        _binding = FragmentPatientHomeBinding.inflate(inflater, container, false)
+        return binding.root
     }
+
 }

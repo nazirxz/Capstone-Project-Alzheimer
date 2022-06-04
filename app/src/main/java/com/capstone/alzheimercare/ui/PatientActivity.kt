@@ -6,8 +6,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.capstone.alzheimercare.R
+import com.capstone.alzheimercare.databinding.ActivityCaretakerBinding
 import com.capstone.alzheimercare.databinding.ActivityPatientBinding
+import com.capstone.alzheimercare.ui.caretaker.guide.GuideFragment
+import com.capstone.alzheimercare.ui.caretaker.scanner.ScannerFragment
 import com.capstone.alzheimercare.ui.patient.home.HomeFragment
+import com.capstone.alzheimercare.ui.patient.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
@@ -25,7 +29,7 @@ class PatientActivity : AppCompatActivity(), BottomNavigationView.OnNavigationIt
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.navigation_home -> loadFragment(HomeFragment())
-            //R.id.navigation_profile -> loadFragment(ProfileFragment())
+            R.id.navigation_profile -> loadFragment(ProfileFragment())
         }
         return true
     }
