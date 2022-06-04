@@ -4,6 +4,7 @@ import com.capstone.alzheimercare.core.domain.usecase.*
 import com.capstone.alzheimercare.ui.caretaker.scanner.ScannerViewModel
 import com.capstone.alzheimercare.ui.login.LoginViewModel
 import com.capstone.alzheimercare.ui.patient.home.HomeViewModel
+import com.capstone.alzheimercare.ui.patient.profile.ProfileViewModel
 import com.capstone.alzheimercare.ui.signup.SignUpViewModel
 import org.koin.android.viewmodel.dsl.viewModel
 import org.koin.dsl.module
@@ -16,6 +17,8 @@ val useCaseModule = module {
 val viewModelModule = module {
 
     viewModel { HomeViewModel(get())}
+    viewModel { ProfileViewModel(get())}
+
     viewModel { ScannerViewModel(get(),get())}
     //auth
     viewModel { SignUpViewModel(get(), get()) }
