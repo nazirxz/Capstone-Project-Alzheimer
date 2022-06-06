@@ -58,5 +58,6 @@
     <string name="scan">Scan....</string>
     <string name="back">Back</string>
     <string name="qr_code">QR Code</string>
+    <string name="check_id">Check Id</string>
 
 </resources>

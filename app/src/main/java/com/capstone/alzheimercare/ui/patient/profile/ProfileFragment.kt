@@ -57,6 +57,9 @@ class ProfileFragment : Fragment() {
             startActivity(intent)
             activity?.finish()
         }
+        binding.checkIdBtn.setOnClickListener {
+            activity?.navigateTo(CheckIdFragment(), R.id.frame)
+        }
         binding.btnEdit.setOnClickListener {
             activity?.navigateTo(UpdateProfileFragment(), R.id.frame)
         }
