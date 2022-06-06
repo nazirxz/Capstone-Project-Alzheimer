@@ -22,6 +22,14 @@ import org.koin.android.viewmodel.ext.android.viewModel
 import java.text.DateFormatSymbols
 import java.text.SimpleDateFormat
 import java.util.*
+import android.R
+import java.util.Locale
+
+
+
+
+
+
 
 
 class AddTaskFragment : Fragment() {
@@ -62,7 +70,10 @@ class AddTaskFragment : Fragment() {
             }
         })
         setUpDatePicker()
-        setUpTimePicker()
+        binding.btnTime.setOnClickListener {
+            setUpTimePicker()
+        }
+
 
         binding.btnDone.setOnClickListener {
             lifecycleScope.launch(Dispatchers.IO) {
@@ -110,39 +121,22 @@ class AddTaskFragment : Fragment() {
         }
     }
     private fun setUpTimePicker() {
-        val calendar = Calendar.getInstance()
-        val hour = calendar[Calendar.HOUR_OF_DAY]
-        val minute = calendar[Calendar.MINUTE]
-        binding.btnTime.setOnClickListener {
-        val timePickerDialog = TimePickerDialog(requireActivity(),
-            TimePickerDialog.OnTimeSetListener { timePicker, i, i1 ->
-                binding.btnTime.setText(" "+FormatTime(i, i1))
-            }, hour, minute, false)
+        var hour: Int = 0
+        var minute: Int = 0
+        var mseconds = 0
+        val onTimeSetListener =
+            TimePickerDialog.OnTimeSetListener { timePicker, selectedHour, selectedMinute,  ->
+                hour = selectedHour
+                minute = selectedMinute
+                binding.btnTime.setText(String.format(Locale.getDefault(), " %02d:%02d:%02d", hour, minute, mseconds))
+            }
+
+        val timePickerDialog =
+            TimePickerDialog(requireActivity(),  /*style,*/onTimeSetListener, hour, minute, true)
+
+        timePickerDialog.setTitle("Select Time")
         timePickerDialog.show()
-        }
 
-    }
-
-    private fun FormatTime(hour: Int, minute: Int): String? {
-        var time: String
-        time = ""
-        val formattedMinute: String
-        formattedMinute = if (minute / 10 == 0) {
-            "0$minute"
-        } else {
-            "" + minute
-        }
-        time = if (hour == 0) {
-            "12:$formattedMinute AM"
-        } else if (hour < 12) {
-            "$hour:$formattedMinute AM"
-        } else if (hour == 12) {
-            "12:$formattedMinute PM"
-        } else {
-            val temp = hour - 12
-            "$temp:$formattedMinute PM"
-        }
-        return time
     }
 
     private fun updateLabel() {
