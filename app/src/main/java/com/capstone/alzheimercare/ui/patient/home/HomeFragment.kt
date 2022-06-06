@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.capstone.alzheimercare.R
@@ -18,7 +19,7 @@ import com.capstone.alzheimercare.utils.Utility.simpleText
 import com.google.android.material.snackbar.Snackbar
 import org.koin.android.viewmodel.ext.android.viewModel
 
-class HomeFragment : Fragment(), TaskCallback {
+class HomeFragment : Fragment() {
     private lateinit var preference: MyPreference
     private lateinit var taskAdapter: TaskAdapter
     private val homeViewModel: HomeViewModel by viewModel()
@@ -55,7 +56,7 @@ class HomeFragment : Fragment(), TaskCallback {
         })
 
         if (activity != null) {
-            taskAdapter = TaskAdapter(this)
+            taskAdapter = TaskAdapter()
             val id = preference.getId()
             taskViewModel.getTasks(id).observe(viewLifecycleOwner, { notes ->
                 Log.d("notes", notes.data.toString())
@@ -106,7 +107,4 @@ class HomeFragment : Fragment(), TaskCallback {
         }
     }
 
-    override fun onItemClick(task: Tasks) {
-        TODO("Not yet implemented")
-    }
 }

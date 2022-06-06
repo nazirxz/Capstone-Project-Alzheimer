@@ -8,7 +8,7 @@ import com.capstone.alzheimercare.R
 import com.capstone.alzheimercare.core.domain.model.Tasks
 import com.capstone.alzheimercare.databinding.ItemTaskBinding
 
-class TaskAdapter(private val callback: TaskCallback) :
+class TaskAdapter() :
     RecyclerView.Adapter<TaskAdapter.ListViewHolder>() {
 
     private var listData = ArrayList<Tasks>()
@@ -37,9 +37,6 @@ class TaskAdapter(private val callback: TaskCallback) :
 
                 itemContainer.setBackgroundColor(ContextCompat.getColor(itemContainer.context,
                         R.color.blue))
-                itemView.setOnClickListener {
-                    callback.onItemClick(task)
-                }
             }
         }
     }
