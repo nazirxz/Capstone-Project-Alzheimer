@@ -46,7 +46,6 @@ class ScannerFragment : Fragment() {
                 }
                 fragment.arguments = bundle
                 activity?.navigateTo(fragment, R.id.frame)
-
             }
         }
     }

@@ -15,6 +15,7 @@ import org.koin.dsl.module
 val useCaseModule = module {
     factory<PatientUseCase> { PatientInteractor(get()) }
     factory<CaretakerUseCase> { CaretakerInteractor(get()) }
+    factory<TaskUseCase> { TaskInteractor(get())}
 }
 
 val viewModelModule = module {

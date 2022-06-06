@@ -54,7 +54,7 @@
 
     <string name="home_greeting">Hello, %s</string>
     <string name="empty_stories">Oopss ! You have no task today</string>
-    <string name="add_taskpatient">Add Patient</string>
+    <string name="add_taskpatient">Add Task Patient</string>
     <string name="scan">Scan....</string>
     <string name="back">Back</string>
     <string name="qr_code">QR Code</string>
