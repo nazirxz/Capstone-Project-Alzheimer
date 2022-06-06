@@ -60,4 +60,19 @@
     <string name="qr_code">QR Code</string>
     <string name="check_id">Check Id</string>
 
+    <string name="profile_caretaker_nameprofile">Caretaker\'s name</string>
+
+    <string name="profile_caretaker_fullname_data">Caretaker\'s name</string>
+    <string name="profile_caretaker_fullname">Full name</string>
+    <string name="profile_caretaker_email">Email</string>
+    <string name="profile_caretaker_email_data">Caretaker\'s Email</string>
+    <string name="profile_caretaker_phonenumber">Phone Number</string>
+    <string name="profile_caretaker_phonennumber_data">Caretaker\'s phone number</string>
+    <string name="profile_caretaker_datebirth">Date Birth</string>
+    <string name="profile_caretaker_datebirth_data">Caretaker\'s Date Birth</string>
+    <string name="profile_caretaker_address">Address</string>
+    <string name="profile_caretaker_address_data">Caretaker\'s Address</string>
+    <string name="profile_caretaker_gender">Gender</string>
+    <string name="profile_caretaker_gender_data">Caretaker\'s Gender</string>
+
 </resources>

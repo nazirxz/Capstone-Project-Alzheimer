@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction
 import com.capstone.alzheimercare.R
 import com.capstone.alzheimercare.databinding.ActivityCaretakerBinding
 import com.capstone.alzheimercare.ui.caretaker.guide.GuideFragment
+import com.capstone.alzheimercare.ui.caretaker.profile.ProfileFragment
 import com.capstone.alzheimercare.ui.caretaker.scanner.ScannerFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -27,6 +28,7 @@ class CaretakerActivity : AppCompatActivity(), BottomNavigationView.OnNavigation
         when (item.itemId) {
             R.id.navigation_scanner -> loadFragment(ScannerFragment())
             R.id.navigation_guide -> loadFragment(GuideFragment())
+            R.id.navigation_profile -> loadFragment(ProfileFragment())
         }
         return true
     }

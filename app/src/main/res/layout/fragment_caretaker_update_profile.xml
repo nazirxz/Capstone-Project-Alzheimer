@@ -12,12 +12,12 @@
         android:layout_height="match_parent"
         android:paddingHorizontal="36dp"
         android:paddingVertical="24dp"
-        tools:context=".ui.patient.profile.UpdateProfileFragment">
+        tools:context=".ui.caretaker.profile.UpdateProfileFragment">
 
         <ImageButton
             android:id="@+id/back_btn"
-            android:layout_width="44dp"
-            android:layout_height="37dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:background="@drawable/back_shape"
             android:contentDescription="@string/profile_back"
             android:src="@drawable/ic_back_black_24dp"
@@ -187,5 +187,6 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/gender_txt" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
