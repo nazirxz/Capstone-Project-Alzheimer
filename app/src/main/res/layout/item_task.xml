@@ -44,7 +44,7 @@
             android:id="@+id/tv_task"
             style="@style/TextView.PoppinsNormal22sp020202"
             android:layout_width="match_parent"
-            android:layout_height="24dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
             android:text="Task Name"

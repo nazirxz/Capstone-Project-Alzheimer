@@ -18,7 +18,6 @@ buildscript {
         qr_code_version = "1.0.3"
         zxing_embedded_version = "3.6.0"
         mutltidex_version = "1.0.3"
-        lottie_version = "3.7.0"
 
         tensorflow_version = "0.1.0-rc1"
 

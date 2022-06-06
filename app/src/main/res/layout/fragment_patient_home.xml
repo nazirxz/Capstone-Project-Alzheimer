@@ -58,33 +58,64 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcTask"
-        android:layout_width="426dp"
-        android:layout_height="610dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
         android:clipChildren="false"
         android:clipToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header"
-        tools:itemCount="7"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintVertical_bias="0.05"
+        tools:itemCount="5"
         tools:listitem="@layout/item_task" />
 
-        <TextView
-            android:id="@+id/tv_empty"
-            style="@style/TextView.PoppinsNormal16sp020202"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="@string/empty_stories"
-            android:textAlignment="center"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rcTask"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/empty"
+            app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
+            app:layout_constraintEnd_toEndOf="@+id/recyclerView"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/rcTask"
-            app:layout_constraintVertical_bias="0.356"
-            tools:visibility="visible" />
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Your Tasks List is Empty"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/recyclerView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="147dp"
+        android:layout_height="89dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintVertical_bias="0.477" />
 </androidx.constraintlayout.widget.ConstraintLayout>

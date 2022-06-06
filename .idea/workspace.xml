@@ -13,7 +13,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0055d72-1fb6-482f-9e5d-0831bb5c3934" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/splash/SplashScreenActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/splash/SplashScreenActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/patient/home/TaskAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/patient/home/TaskCallback.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/patient/home/TaskViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/empty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/di/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/di/AppModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/task/AddTaskFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/task/AddTaskFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/patient/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/patient/home/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_caretaker_add_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_caretaker_add_task.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_patient_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_patient_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_task.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +127,7 @@
     <property name="android-custom-viewF:/Bangkit Project Capstone/Project/app/src/main/java/com/capstone/alzheimercare/ui/login/customview/PasswordEditText.kt_SELECTED" value="PasswordEditText" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/profile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/patient/home" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -122,11 +136,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Bangkit Project Capstone\Project\app\src\main\java\com\capstone\alzheimercare\ui\patient\home" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\java\com\capstone\alzheimercare\ui\caretaker\profile" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\xml" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\java\com\capstone\alzheimercare\ui\caretaker\guide" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\drawable-v24" />
-      <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\drawable\guide" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\drawable" />
@@ -428,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654506370989</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fixing splash screen login according to role">
+      <created>1654506745237</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1654506745237</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -456,8 +477,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="onboarding ui fixed" />
-    <MESSAGE value="ui login" />
     <MESSAGE value="navbar and icon" />
     <MESSAGE value="adding navbar and icon" />
     <MESSAGE value="adding bottom navbar" />
@@ -481,6 +500,8 @@
     <MESSAGE value="adding caretaker update and view profile (work)" />
     <MESSAGE value="adding add task fragment (work but will be changes again)" />
     <MESSAGE value="fixing add task fragment (fully work)" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing add task fragment (fully work)" />
+    <MESSAGE value="fixing splash screen login according to role (fully work)" />
+    <MESSAGE value="fixing splash screen login according to role" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing splash screen login according to role" />
   </component>
 </project>

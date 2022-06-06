@@ -9,47 +9,6 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#FFF">
-
-        <ImageView
-            android:id="@+id/ivProfil"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginEnd="24dp"
-            android:src="@drawable/ic_picture_empty"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/tvSubtitle"
-            style="@style/TextView.PoppinsNormal14sp8D92A3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:text="@string/caretaker_datetime"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.377" />
-
-        <TextView
-            android:id="@+id/tvTitle"
-            style="@style/TextView.PoppinsNormal22sp020202"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginBottom="15dp"
-            android:text="Hello, caretaker's name"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvSubtitle" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
         android:layout_height="628dp"
         android:background="@color/bluewhite">
 
@@ -58,7 +17,7 @@
             style="@style/TextView.PoppinsNormal22sp020202"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
+            android:layout_marginTop="112dp"
             android:text="Your patient task list !"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -79,7 +38,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_task"
-                android:layout_width="343dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="16dp"
                 android:inputType="text|textMultiLine"

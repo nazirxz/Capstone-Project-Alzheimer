@@ -6,6 +6,7 @@ import com.capstone.alzheimercare.ui.caretaker.profile.UpdateCaretakerViewModel
 import com.capstone.alzheimercare.ui.caretaker.scanner.ScannerViewModel
 import com.capstone.alzheimercare.ui.login.LoginViewModel
 import com.capstone.alzheimercare.ui.patient.home.HomeViewModel
+import com.capstone.alzheimercare.ui.patient.home.TaskViewModel
 import com.capstone.alzheimercare.ui.patient.profile.ProfilePatientViewModel
 import com.capstone.alzheimercare.ui.patient.profile.UpdatePatientViewModel
 import com.capstone.alzheimercare.ui.signup.SignUpViewModel
@@ -21,6 +22,7 @@ val useCaseModule = module {
 val viewModelModule = module {
 
     viewModel { HomeViewModel(get()) }
+    viewModel { TaskViewModel(get()) }
     viewModel { ProfilePatientViewModel(get()) }
     viewModel { UpdatePatientViewModel(get()) }
 
