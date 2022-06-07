@@ -22,6 +22,12 @@ import java.text.DateFormatSymbols
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.Locale
+import android.util.Log
+
+import android.widget.DatePicker
+
+
+
 
 class AddTaskFragment : Fragment() {
 
@@ -86,30 +92,19 @@ class AddTaskFragment : Fragment() {
     }
 
     private fun setUpDatePicker() {
-        val date = DatePickerDialog.OnDateSetListener { _, year, monthOfYear, dayOfMonth ->
-            calendar.set(Calendar.YEAR, year)
-            calendar.set(Calendar.MONTH, monthOfYear)
-            calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth)
-            updateLabel()
-        }
         binding.btnDate.setOnClickListener {
-            val months = DateFormatSymbols.getInstance().months
-            val dateNow = binding.btnDate.text.toString()
-            val splitDate = dateNow.split(" ")
-            if (splitDate.size == 3) {
-                DatePickerDialog(
-                    requireActivity(), date, splitDate[2].toInt(), months.indexOf(splitDate[1]),
-                    splitDate[0].toInt()
-                ).show()
-            } else {
-                DatePickerDialog(
-                    requireActivity(),
-                    date,
-                    calendar.get(Calendar.YEAR),
-                    calendar.get(Calendar.MONTH),
-                    calendar.get(Calendar.DAY_OF_MONTH)
-                ).show()
-            }
+            val dialog = DatePickerDialog(requireActivity(),
+                { view, year, month, dayOfMonth ->
+                    val _year = year.toString()
+                    val _month = if (month + 1 < 10) "0" + (month + 1) else (month + 1).toString()
+                    val _date = if (dayOfMonth < 10) "0$dayOfMonth" else dayOfMonth.toString()
+                    val _pickedDate = "$year-$_month-$_date"
+                    val formatter = SimpleDateFormat("yy-MM-dd", Locale.US)
+                    Log.e("PickedDate: ", "Date: $_pickedDate") //2019-02-12
+                    updateLabel()
+                }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.MONTH))
+            dialog.datePicker.minDate = System.currentTimeMillis() - 1000
+            dialog.show()
         }
     }
     private fun setUpTimePicker() {
@@ -117,10 +112,10 @@ class AddTaskFragment : Fragment() {
         var minute: Int = 0
         var mseconds = 0
         val onTimeSetListener =
-            TimePickerDialog.OnTimeSetListener { timePicker, selectedHour, selectedMinute,  ->
+            TimePickerDialog.OnTimeSetListener { timePicker, selectedHour, selectedMinute ->
                 hour = selectedHour
                 minute = selectedMinute
-                binding.btnTime.setText(String.format(Locale.getDefault(), "%02d:%02d:%02d", hour, minute, mseconds))
+                binding.btnTime.setText(String.format(Locale.getDefault(), " %02d:%02d:%02d", hour, minute, mseconds))
             }
 
         val timePickerDialog =
@@ -130,10 +125,10 @@ class AddTaskFragment : Fragment() {
         timePickerDialog.show()
 
     }
-
     private fun updateLabel() {
         val formatter = SimpleDateFormat("yy-MM-dd", Locale.US)
         binding.btnDate.setText(formatter.format(calendar.time))
     }
+
 
 }
