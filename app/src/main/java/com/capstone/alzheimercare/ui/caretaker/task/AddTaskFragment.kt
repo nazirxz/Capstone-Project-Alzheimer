@@ -18,15 +18,10 @@ import com.capstone.alzheimercare.utils.Utility.hideKeyboard
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import org.koin.android.viewmodel.ext.android.viewModel
-import java.text.DateFormatSymbols
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.Locale
 import android.util.Log
-
-import android.widget.DatePicker
-
-
 
 
 class AddTaskFragment : Fragment() {
@@ -99,7 +94,6 @@ class AddTaskFragment : Fragment() {
                     val _month = if (month + 1 < 10) "0" + (month + 1) else (month + 1).toString()
                     val _date = if (dayOfMonth < 10) "0$dayOfMonth" else dayOfMonth.toString()
                     val _pickedDate = "$year-$_month-$_date"
-                    val formatter = SimpleDateFormat("yy-MM-dd", Locale.US)
                     Log.e("PickedDate: ", "Date: $_pickedDate") //2019-02-12
                     updateLabel()
                 }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.MONTH))
@@ -107,6 +101,7 @@ class AddTaskFragment : Fragment() {
             dialog.show()
         }
     }
+
     private fun setUpTimePicker() {
         var hour: Int = 0
         var minute: Int = 0
@@ -119,7 +114,7 @@ class AddTaskFragment : Fragment() {
             }
 
         val timePickerDialog =
-            TimePickerDialog(requireActivity(),  /*style,*/onTimeSetListener, hour, minute, true)
+            TimePickerDialog(requireActivity(), onTimeSetListener, hour, minute, true)
 
         timePickerDialog.setTitle("Select Time")
         timePickerDialog.show()

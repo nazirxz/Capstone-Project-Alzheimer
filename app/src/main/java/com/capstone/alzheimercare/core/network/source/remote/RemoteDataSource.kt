@@ -10,9 +10,13 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.tasks.await
+import java.text.SimpleDateFormat
+import java.util.*
 
 class RemoteDataSource {
     private val db = FirebaseFirestore.getInstance()
+
+
 
     private val patientDb = db.collection("patient")
     private val caretakerDb = db.collection("caretaker")
@@ -23,7 +27,10 @@ class RemoteDataSource {
             val data = taskDb.get().await()
             val tasks = data.toObjects(TasksResponse::class.java)
             if (tasks.isNotEmpty()) {
-                val list = tasks.filter { it.idPatient == idPatient }
+                val list = tasks.filter {
+                    it.idPatient == idPatient
+                }
+
                 Log.d("getTasks", list.toString())
                 emit(ApiResponse.Success(list))
             } else {
