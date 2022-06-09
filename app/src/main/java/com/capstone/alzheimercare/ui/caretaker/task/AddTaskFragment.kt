@@ -22,6 +22,10 @@ import java.text.SimpleDateFormat
 import java.util.*
 import java.util.Locale
 import android.util.Log
+import com.capstone.alzheimercare.ml.Model
+import org.tensorflow.lite.DataType
+import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
+import java.nio.ByteBuffer
 
 
 class AddTaskFragment : Fragment() {
@@ -63,10 +67,7 @@ class AddTaskFragment : Fragment() {
         })
 
         setUpDatePicker()
-        binding.btnTime.setOnClickListener {
-            setUpTimePicker()
-        }
-
+        setUpTimePicker()
 
         binding.btnDone.setOnClickListener {
             lifecycleScope.launch(Dispatchers.IO) {
@@ -103,26 +104,56 @@ class AddTaskFragment : Fragment() {
     }
 
     private fun setUpTimePicker() {
-        var hour: Int = 0
-        var minute: Int = 0
-        var mseconds = 0
-        val onTimeSetListener =
-            TimePickerDialog.OnTimeSetListener { timePicker, selectedHour, selectedMinute ->
-                hour = selectedHour
-                minute = selectedMinute
-                binding.btnTime.setText(String.format(Locale.getDefault(), " %02d:%02d:%02d", hour, minute, mseconds))
-            }
+        binding.btnTime.setOnClickListener {
+            var hour: Int = 0
+            var minute: Int = 0
+            var mseconds = 0
+            val onTimeSetListener =
+                TimePickerDialog.OnTimeSetListener { timePicker, selectedHour, selectedMinute ->
+                    hour = selectedHour
+                    minute = selectedMinute
+                    binding.btnTime.setText(String.format(Locale.getDefault(),
+                        " %02d:%02d:%02d",
+                        hour,
+                        minute,
+                        mseconds))
+                }
 
-        val timePickerDialog =
-            TimePickerDialog(requireActivity(), onTimeSetListener, hour, minute, true)
+            val timePickerDialog =
+                TimePickerDialog(requireActivity(), onTimeSetListener, hour, minute, true)
 
-        timePickerDialog.setTitle("Select Time")
-        timePickerDialog.show()
+            timePickerDialog.setTitle("Select Time")
+            timePickerDialog.show()
+        }
 
     }
     private fun updateLabel() {
         val formatter = SimpleDateFormat("yy-MM-dd", Locale.US)
         binding.btnDate.setText(formatter.format(calendar.time))
+    }
+
+    private fun connectML(list: ArrayList<Double>): String {
+        val byteBuffer: ByteBuffer = ByteBuffer.allocateDirect(40)
+        for (num in list) {
+            byteBuffer.putFloat(num.toFloat())
+        }
+        val model = Model.newInstance(requireContext())
+
+
+        // Creates inputs for reference.
+        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
+        inputFeature0.loadBuffer(byteBuffer)
+        val inputFeature1 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
+        inputFeature1.loadBuffer(byteBuffer)
+
+        // Runs model inference and gets result.
+        val outputs = model.process(inputFeature0, inputFeature1)
+        val outputFeature0 = outputs.outputFeature0AsTensorBuffer
+
+        // Releases model resources if no longer used.
+        model.close()
+
+        return outputFeature0.toString()
     }
 
 
