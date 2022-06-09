@@ -36,7 +36,7 @@ class AddTaskFragment : Fragment() {
     private val binding get() = _binding as FragmentCaretakerAddTaskBinding
     private var calendar = Calendar.getInstance()
 
-    private val viewModel: ScannerViewModel by viewModel()
+    private val viewModel: AddTaskViewModel by viewModel()
     private lateinit var preference: MyPreference
     private lateinit var from: String
 

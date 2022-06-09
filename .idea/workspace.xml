@@ -14,12 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0055d72-1fb6-482f-9e5d-0831bb5c3934" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/task/AddTaskViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/di/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/di/AppModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/task/AddTaskFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/task/AddTaskFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_caretaker_add_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_caretaker_add_task.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/task/AddTaskViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/task/AddTaskViewModel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,11 +143,11 @@
       <recent name="com.capstone.alzheimercare.network.source.remote" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.capstone.alzheimercare.ui.caretaker.task" />
       <recent name="com.capstone.alzheimercare.ui.caretaker.profile" />
       <recent name="com.capstone.alzheimercare.ui.patient.profile" />
       <recent name="com.capstone.alzheimercare.ui.caretaker.guide" />
       <recent name="com.capstone.alzheimercare.ui.patient.home" />
-      <recent name="com.capstone.alzheimercare" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.capstone.alzheimercare.utils" />
@@ -478,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654774411906</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="adding addtaskviewmodel and method of implement machine learning">
+      <created>1654774716789</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1654774716789</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -506,7 +510,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="all caretaker ui (done)" />
     <MESSAGE value="adding patient ui" />
     <MESSAGE value="adding signup up" />
     <MESSAGE value="adding splash screen" />
@@ -531,6 +534,7 @@
     <MESSAGE value="fixing recycler view (filter data timestamp)" />
     <MESSAGE value="adding model ml to apps" />
     <MESSAGE value="changing format set time picker code" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing format set time picker code" />
+    <MESSAGE value="adding addtaskviewmodel and method of implement machine learning" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding addtaskviewmodel and method of implement machine learning" />
   </component>
 </project>

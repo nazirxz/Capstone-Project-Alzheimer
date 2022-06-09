@@ -12,5 +12,6 @@ class AddTaskViewModel(
     private val taskUseCase: TaskUseCase,
 ) : ViewModel() {
     fun getCaretaker(id: String) = caretakerUseCase.getCaretakerDetail(id).asLiveData()
+    fun getTask(id:String) = taskUseCase.getTasks(id).asLiveData()
     fun insert(task: Tasks) = taskUseCase.insertTasks(task)
 }
