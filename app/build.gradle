@@ -33,6 +33,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        mlModelBinding true
     }
     compileSdkVersion 30
     buildToolsVersion '30.0.2'
