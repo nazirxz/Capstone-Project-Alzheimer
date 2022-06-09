@@ -74,5 +74,6 @@
     <string name="profile_caretaker_address_data">Caretaker\'s Address</string>
     <string name="profile_caretaker_gender">Gender</string>
     <string name="profile_caretaker_gender_data">Caretaker\'s Gender</string>
+    <string name="OK">OK</string>
 
 </resources>

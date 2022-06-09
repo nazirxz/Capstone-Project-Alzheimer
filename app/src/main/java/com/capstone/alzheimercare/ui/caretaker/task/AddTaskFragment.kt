@@ -22,7 +22,9 @@ import java.text.SimpleDateFormat
 import java.util.*
 import java.util.Locale
 import android.util.Log
+import com.capstone.alzheimercare.R
 import com.capstone.alzheimercare.ml.Model
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
