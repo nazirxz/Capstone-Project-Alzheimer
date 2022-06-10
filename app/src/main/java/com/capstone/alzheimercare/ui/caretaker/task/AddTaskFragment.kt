@@ -29,6 +29,9 @@ import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
 import kotlin.collections.ArrayList
+import java.nio.CharBuffer
+import java.nio.FloatBuffer
+import java.nio.charset.StandardCharsets
 
 
 class AddTaskFragment : Fragment() {
@@ -80,7 +83,7 @@ class AddTaskFragment : Fragment() {
                     is Resource.Success -> {
                         for (i in 0..task.data?.size!!) {
                             task.data?.forEach{
-                                showHour(it.timeStamp)
+                                //showHour(it.timeStamp)
                                 listDate = it.timeStamp
                                 listTask = it.taskName
                             }
@@ -168,51 +171,60 @@ class AddTaskFragment : Fragment() {
         binding.btnDate.setText(formatter.format(calendar.time))
     }
 
-    private fun connectML(list: ArrayList<Int>, listtask:ArrayList<String>): String {
-        var byteBuffer : ByteBuffer = ByteBuffer.allocate(1*4)
+    private fun loadModel(taskdate: ArrayList<Int>, listtask:ArrayList<String>) {
 
-        val byteBuffer2: ByteBuffer = ByteBuffer.allocateDirect(1 * 4)
-
+        val array = ArrayList<Float>()
         val model = Model.newInstance(requireContext())
-
-        // Creates inputs for reference.
         val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
-        inputFeature0.loadBuffer(byteBuffer)
         val inputFeature1 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
-        inputFeature1.loadBuffer(byteBuffer2)
+        for (j in 0 until taskdate.size) {
 
-        // Runs model inference and gets result.
-        val outputs = model.process(inputFeature0, inputFeature1)
-        val outputFeature0 = outputs.outputFeature0AsTensorBuffer
+            val byteBuffer1: ByteBuffer = ByteBuffer.allocateDirect(1 * 4)
+            byteBuffer1.putInt(taskdate[j])
+            val byteBuffer2: ByteBuffer = ByteBuffer.allocateDirect(1 * 4)
 
-        // Releases model resources if no longer used.
+            inputFeature0.loadBuffer(byteBuffer1)
+            inputFeature1.loadBuffer(byteBuffer2)
+
+            val outputs = model.process(inputFeature0, inputFeature1)
+            val outputFeature0 = outputs.outputFeature0AsTensorBuffer.floatArray
+
+//            Log.d("output", outputFeature0[0].toString())
+//            Log.d("output2", inputFeature1.shape.size.toString())
+
+            array.add(outputFeature0[0])
+        }
+        Log.d("Input Fitur", inputFeature0.toString())
+        Log.d("Input Fitur 2", inputFeature1.toString())
+        Log.d("output", array.size.toString() + " " + array[0].toString())
         model.close()
 
-        return outputFeature0.toString()
     }
+    //39 -122 24 64
     private fun showML() {
         binding.btnPatient.setOnClickListener {
-            val result = connectML(
+            val result = loadModel(
                 arrayListOf(
-                    9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9 ,9 ,9 ,9 ,9 ,9 ,9 ,9 ,9,
-                    9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9 ,9 ,9, 9
+                    2, 5, 9, 2,2,2,2,9,9,9
                 ),
                 arrayListOf(
-                    "Makan Malam",
                     "Jogging",
-                    "Nyanyi"
+                    "Jogging",
+                    "Siang",
+                    "Makan Malam"
                 )
             )
             MaterialAlertDialogBuilder(requireActivity())
-                .setMessage(result)
+                .setMessage(""+result)
                 .setNegativeButton(getString(R.string.OK),null)
                 .show()
         }
     }
     fun showHour(list : String): String? {
-        val df = SimpleDateFormat("H")
-        return list
+        val formatter = SimpleDateFormat("H", Locale.US)
+        return formatter.format(list)
     }
+
 
     private fun showLoading(isLoading: Boolean) {
         if (isLoading) {

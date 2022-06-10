@@ -15,10 +15,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0055d72-1fb6-482f-9e5d-0831bb5c3934" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/assets/taskonly.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/AlzheimerCare.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/AlzheimerCare.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/task/AddTaskFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/capstone/alzheimercare/ui/caretaker/task/AddTaskFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_caretaker_add_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_caretaker_add_task.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +121,7 @@
     <property name="android-custom-viewF:/Bangkit Project Capstone/Project/app/src/main/java/com/capstone/alzheimercare/ui/login/customview/PasswordEditText.kt_SELECTED" value="PasswordEditText" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Model ML/model.tflite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/assets" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -129,11 +130,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Bangkit Project Capstone\Project\app\src\main\assets" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\java\com\capstone\alzheimercare\ui\patient\home" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\java\com\capstone\alzheimercare\ui\caretaker\profile" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\xml" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\java\com\capstone\alzheimercare\ui\caretaker\guide" />
-      <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\drawable-v24" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\drawable" />
@@ -492,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654842126575</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="implement machine learning (still error v2)">
+      <created>1654848236195</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1654848236195</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -520,7 +528,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adding signup up" />
     <MESSAGE value="adding splash screen" />
     <MESSAGE value="adding data remote and local" />
     <MESSAGE value="adding signin and signup (work)" />
@@ -545,6 +552,7 @@
     <MESSAGE value="changing format set time picker code" />
     <MESSAGE value="adding addtaskviewmodel and method of implement machine learning" />
     <MESSAGE value="implement machine learning (still error)" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement machine learning (still error)" />
+    <MESSAGE value="implement machine learning (still error v2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement machine learning (still error v2)" />
   </component>
 </project>
