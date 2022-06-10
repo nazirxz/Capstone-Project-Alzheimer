@@ -13,7 +13,6 @@ import com.capstone.alzheimercare.core.domain.model.Tasks
 import com.capstone.alzheimercare.core.network.Resource
 import com.capstone.alzheimercare.databinding.FragmentCaretakerAddTaskBinding
 import com.capstone.alzheimercare.ui.MyPreference
-import com.capstone.alzheimercare.ui.caretaker.scanner.ScannerViewModel
 import com.capstone.alzheimercare.utils.Utility.hideKeyboard
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -28,10 +27,10 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
+import kotlin.collections.ArrayList
 
 
 class AddTaskFragment : Fragment() {
-
     private var _binding: FragmentCaretakerAddTaskBinding? = null
     private val binding get() = _binding as FragmentCaretakerAddTaskBinding
     private var calendar = Calendar.getInstance()
@@ -39,6 +38,9 @@ class AddTaskFragment : Fragment() {
     private val viewModel: AddTaskViewModel by viewModel()
     private lateinit var preference: MyPreference
     private lateinit var from: String
+    private var listDate: String = ""
+    private var listTask: String = ""
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -68,8 +70,27 @@ class AddTaskFragment : Fragment() {
             }
         })
 
+        viewModel.getTask(idPatient).observe(viewLifecycleOwner, { task ->
+            Log.d("getTasks", task.data.toString())
+            if (task != null) {
+                when (task) {
+                    is Resource.Loading -> {
+                    }
+                    is Resource.Success -> {
+                        task.data?.forEach{
+                            listDate = "${it.timeStamp}"
+                            listTask = "${it.taskName}"
+                        }
+                    }
+                    is Resource.Error -> {
+                    }
+                }
+            }
+        })
+
         setUpDatePicker()
         setUpTimePicker()
+        showML()
 
         binding.btnDone.setOnClickListener {
             lifecycleScope.launch(Dispatchers.IO) {
@@ -84,7 +105,7 @@ class AddTaskFragment : Fragment() {
             }
             it.hideKeyboard()
             activity?.supportFragmentManager?.popBackStack()
-            Toast.makeText(requireContext(), "Tasks has been added to patient", Toast.LENGTH_SHORT)
+            Toast.makeText(requireContext(), "Task has been added to patient", Toast.LENGTH_SHORT)
                 .show()
         }
     }
@@ -104,6 +125,7 @@ class AddTaskFragment : Fragment() {
             dialog.show()
         }
     }
+
 
     private fun setUpTimePicker() {
         binding.btnTime.setOnClickListener {
@@ -127,25 +149,20 @@ class AddTaskFragment : Fragment() {
             timePickerDialog.setTitle("Select Time")
             timePickerDialog.show()
         }
-
     }
     private fun updateLabel() {
         val formatter = SimpleDateFormat("yy-MM-dd", Locale.US)
         binding.btnDate.setText(formatter.format(calendar.time))
     }
 
-    private fun connectML(list: ArrayList<Double>): String {
-        val byteBuffer: ByteBuffer = ByteBuffer.allocateDirect(40)
-        for (num in list) {
-            byteBuffer.putFloat(num.toFloat())
-        }
+    private fun connectML(list: ArrayList<Double>, listtask:ArrayList<String>): String {
+        val byteBuffer: ByteBuffer = ByteBuffer.allocateDirect(63)
         val model = Model.newInstance(requireContext())
 
-
         // Creates inputs for reference.
-        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
+        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(0, 0), DataType.FLOAT32)
         inputFeature0.loadBuffer(byteBuffer)
-        val inputFeature1 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
+        val inputFeature1 = TensorBuffer.createFixedSize(intArrayOf(0, 0), DataType.FLOAT32)
         inputFeature1.loadBuffer(byteBuffer)
 
         // Runs model inference and gets result.
@@ -157,6 +174,24 @@ class AddTaskFragment : Fragment() {
 
         return outputFeature0.toString()
     }
-
-
+    private fun showML() {
+        binding.btnPatient.setOnClickListener {
+            val result = connectML(
+                arrayListOf(
+                    showHour(listDate)!!.toDouble()
+                ),
+                arrayListOf(
+                    listTask
+                )
+            )
+            MaterialAlertDialogBuilder(requireActivity())
+                .setMessage(result)
+                .setNegativeButton(getString(R.string.OK),null)
+                .show()
+        }
+    }
+    fun showHour(list : String): String? {
+        val df = SimpleDateFormat("HH")
+        return list
+    }
 }

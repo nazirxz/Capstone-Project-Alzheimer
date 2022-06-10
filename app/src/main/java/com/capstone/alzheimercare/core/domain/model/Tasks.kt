@@ -5,5 +5,5 @@ data class Tasks(
     val taskName : String,
     var timeStamp : String,
     val idCaretaker : String,
-    val idPatient : String,
+    val idPatient : String
 )

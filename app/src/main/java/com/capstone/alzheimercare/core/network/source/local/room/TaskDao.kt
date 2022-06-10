@@ -9,8 +9,8 @@ interface TaskDao {
     @Query("SELECT * FROM tasks WHERE idPatient=:idPatient ORDER BY timeStamp DESC")
     fun getTasks(idPatient: String): Flow<List<TaskEntity>>
 
-    @Query("SELECT * FROM tasks WHERE id=:id")
-    fun getTask(id: String): Flow<TaskEntity>
+    @Query("SELECT * FROM tasks WHERE id=:idCaretaker")
+    fun getTask(idCaretaker: String): Flow<TaskEntity>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insertTasks(record: TaskEntity)
