@@ -24,6 +24,7 @@ import android.util.Log
 import com.capstone.alzheimercare.R
 import com.capstone.alzheimercare.ml.Model
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.snackbar.Snackbar
 import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
@@ -74,15 +75,27 @@ class AddTaskFragment : Fragment() {
             Log.d("getTasks", task.data.toString())
             if (task != null) {
                 when (task) {
-                    is Resource.Loading -> {
+                    is Resource.Loading -> { showLoading(true)
                     }
                     is Resource.Success -> {
-                        task.data?.forEach{
-                            listDate = "${it.timeStamp}"
-                            listTask = "${it.taskName}"
+                        for (i in 0..task.data?.size!!) {
+                            task.data?.forEach{
+                                showHour(it.timeStamp)
+                                listDate = it.timeStamp
+                                listTask = it.taskName
+                            }
                         }
+                        Log.d("list Date",listDate)
+                        Log.d("List time",listTask)
+                        showLoading(false)
                     }
                     is Resource.Error -> {
+                        showLoading(false)
+                        Snackbar.make(
+                            binding.root,
+                            "There's some mistake",
+                            Snackbar.LENGTH_LONG
+                        ).show()
                     }
                 }
             }
@@ -155,15 +168,18 @@ class AddTaskFragment : Fragment() {
         binding.btnDate.setText(formatter.format(calendar.time))
     }
 
-    private fun connectML(list: ArrayList<Double>, listtask:ArrayList<String>): String {
-        val byteBuffer: ByteBuffer = ByteBuffer.allocateDirect(63)
+    private fun connectML(list: ArrayList<Int>, listtask:ArrayList<String>): String {
+        var byteBuffer : ByteBuffer = ByteBuffer.allocate(1*4)
+
+        val byteBuffer2: ByteBuffer = ByteBuffer.allocateDirect(1 * 4)
+
         val model = Model.newInstance(requireContext())
 
         // Creates inputs for reference.
-        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(0, 0), DataType.FLOAT32)
+        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
         inputFeature0.loadBuffer(byteBuffer)
-        val inputFeature1 = TensorBuffer.createFixedSize(intArrayOf(0, 0), DataType.FLOAT32)
-        inputFeature1.loadBuffer(byteBuffer)
+        val inputFeature1 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
+        inputFeature1.loadBuffer(byteBuffer2)
 
         // Runs model inference and gets result.
         val outputs = model.process(inputFeature0, inputFeature1)
@@ -178,10 +194,13 @@ class AddTaskFragment : Fragment() {
         binding.btnPatient.setOnClickListener {
             val result = connectML(
                 arrayListOf(
-                    showHour(listDate)!!.toDouble()
+                    9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9 ,9 ,9 ,9 ,9 ,9 ,9 ,9 ,9,
+                    9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9 ,9 ,9, 9
                 ),
                 arrayListOf(
-                    listTask
+                    "Makan Malam",
+                    "Jogging",
+                    "Nyanyi"
                 )
             )
             MaterialAlertDialogBuilder(requireActivity())
@@ -191,7 +210,17 @@ class AddTaskFragment : Fragment() {
         }
     }
     fun showHour(list : String): String? {
-        val df = SimpleDateFormat("HH")
+        val df = SimpleDateFormat("H")
         return list
+    }
+
+    private fun showLoading(isLoading: Boolean) {
+        if (isLoading) {
+            binding.progressBar.visibility = View.VISIBLE
+            binding.layout.visibility = View.INVISIBLE
+        } else {
+            binding.progressBar.visibility = View.INVISIBLE
+            binding.layout.visibility = View.VISIBLE
+        }
     }
 }
