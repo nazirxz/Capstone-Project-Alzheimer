@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bluewhite">
+    android:background="@color/bluewhite"
+    tools:context=".ui.caretaker.guide.ListGuideDetail">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="48dp"
-            android:text="Alzheimer Guide"
+            android:text="@string/guide_title"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
@@ -30,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Informasi mengenai alzheimer"
+            android:text="@string/guide_information"
             app:layout_constraintEnd_toEndOf="@+id/tvTitle"
             app:layout_constraintHorizontal_bias="0.486"
             app:layout_constraintStart_toStartOf="@+id/tvTitle"
@@ -47,54 +48,13 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp">
 
-            <androidx.core.widget.NestedScrollView
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcListDetail"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:overScrollMode="never">
+                android:layout_height="wrap_content"
+                android:background="#333333"
+                tools:listitem="@layout/item_guide_detail"/>
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/tv_item_date"
-                        style="@style/TextView.PoppinsNormal22sp020202"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="25dp"
-                        android:ellipsize="end"
-                        android:maxLines="1"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        tools:text="@string/article_guide" />
-
-                    <ImageView
-                        android:id="@+id/imgGuide"
-                        android:layout_width="302dp"
-                        android:layout_height="198dp"
-                        android:layout_marginTop="16dp"
-                        android:src="@drawable/ic_guide_image"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.487"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/tv_item_date" />
-
-                    <TextView
-                        android:id="@+id/tv_item_description"
-                        style="@style/TextView.PoppinsNormal14sp8D92A3"
-                        android:layout_width="298dp"
-                        android:layout_height="200dp"
-                        android:layout_marginTop="12dp"
-                        android:ellipsize="end"
-                        android:maxLines="3"
-                        android:textSize="16sp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.441"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imgGuide"
-                        tools:text="@tools:sample/lorem/random" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.core.widget.NestedScrollView>
         </com.google.android.material.card.MaterialCardView>
 </LinearLayout>

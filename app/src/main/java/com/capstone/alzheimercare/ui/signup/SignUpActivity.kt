@@ -1,7 +1,6 @@
 package com.capstone.alzheimercare.ui.signup
 
 import android.content.Intent
-import android.graphics.Color
 import android.graphics.Paint
 import android.os.Bundle
 import android.util.Log
@@ -14,12 +13,13 @@ import androidx.core.widget.addTextChangedListener
 import androidx.lifecycle.lifecycleScope
 import com.capstone.alzheimercare.ui.MyPreference
 import com.capstone.alzheimercare.R
-import com.capstone.alzheimercare.domain.model.Patient
-import com.capstone.alzheimercare.domain.model.Caretaker
+import com.capstone.alzheimercare.core.domain.model.Patient
+import com.capstone.alzheimercare.core.domain.model.Caretaker
 import com.capstone.alzheimercare.databinding.ActivitySignUpBinding
-import com.capstone.alzheimercare.ui.caretaker.CaretakerActivity
+import com.capstone.alzheimercare.ui.CaretakerActivity
+import com.capstone.alzheimercare.ui.PatientActivity
+import com.capstone.alzheimercare.ui.caretaker.task.AddTaskFragment
 import com.capstone.alzheimercare.ui.login.LoginActivity
-import com.capstone.alzheimercare.ui.patient.PatientActivity
 import com.capstone.alzheimercare.utils.Utility.setColor
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.Dispatchers
@@ -218,8 +218,6 @@ class SignUpActivity : AppCompatActivity() {
                     1. Personal data
                     This may include your name, phone number, birth date, address, gender, and blood type.
 
-                    2. Personal medical record data
-                    This may include your medical laboratory results.
                 """.trimIndent())
                 .setPositiveButton("I agree") { _, _ ->
                     preference.setRole(role)

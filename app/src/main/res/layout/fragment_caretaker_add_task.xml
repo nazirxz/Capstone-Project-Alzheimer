@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.caretaker.task.AddTaskFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bluewhite">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+
+        <TextView
+            android:id="@+id/tvTask"
+            style="@style/TextView.PoppinsNormal22sp020202"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="112dp"
+            android:text="@string/add_task_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_task"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="333dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            app:boxStrokeColor="@color/blue"
+            app:hintEnabled="false"
+            app:layout_constraintEnd_toEndOf="@+id/tvTask"
+            app:layout_constraintStart_toStartOf="@+id/tvTask"
+            app:layout_constraintTop_toBottomOf="@id/tvTask">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_task"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:inputType="text|textMultiLine"
+                tools:text="@string/add_task_messagepatient" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/add_task_time"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/til_task"
+            app:layout_constraintStart_toStartOf="@+id/til_task"
+            app:layout_constraintTop_toBottomOf="@+id/til_task" />
+
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="183dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/red"
+            android:text="@string/add_task_date"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/btnTime"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="@+id/btnTime"
+            app:layout_constraintTop_toBottomOf="@+id/btnTime" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/add_task_done"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/btnDate"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="@+id/btnDate"
+            app:layout_constraintTop_toBottomOf="@+id/btnDate" />
+
+        <Button
+            android:id="@+id/btnPatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp"
+            android:text="@string/add_task_get"
+            app:layout_constraintEnd_toEndOf="@+id/btnDone"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="@+id/btnDone"
+            app:layout_constraintTop_toBottomOf="@+id/btnDone" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="147dp"
+                android:layout_height="89dp"
+                android:theme="@style/ProgressBarColor"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -10,8 +10,9 @@ import androidx.lifecycle.lifecycleScope
 import com.capstone.alzheimercare.R
 import com.capstone.alzheimercare.databinding.ActivityLoginBinding
 import com.capstone.alzheimercare.ui.MyPreference
-import com.capstone.alzheimercare.ui.caretaker.CaretakerActivity
-import com.capstone.alzheimercare.ui.patient.PatientActivity
+import com.capstone.alzheimercare.ui.CaretakerActivity
+import com.capstone.alzheimercare.ui.PatientActivity
+import com.capstone.alzheimercare.ui.caretaker.task.AddTaskFragment
 import com.capstone.alzheimercare.ui.signup.SignUpActivity
 import com.capstone.alzheimercare.utils.Utility.setColor
 import com.google.android.material.dialog.MaterialAlertDialogBuilder

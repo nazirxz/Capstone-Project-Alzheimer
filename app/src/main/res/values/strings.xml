@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Carezeimer</string>
+    <string name="app_name">Carezheimer</string>
 
-    <string name="onboarding_info">Kesusahan merawat pasien alzheimer ?</string>
+    <string name="onboarding_info">Difficulties in treating Alzheimer\'s patients ?</string>
     <string name="onboarding_button">Getting Started</string>
 
     <string name="signin_header">Sign In</string>
@@ -32,6 +32,7 @@
     <string name="yes">YES</string>
     <string name="cancel">Cancel</string>
     <string name="ok">OK</string>
+    <string name="add_action">Select an Action</string>
     <string name="input_error_password">Less than 6 character</string>
     <string name="input_error_email">Invalid Email Entered</string>
     <string name="signup">Sign Up</string>
@@ -40,7 +41,7 @@
     <string name="signup_full_name">Full Name</string>
     <string name="signup_email">Email Address</string>
     <string name="signup_password">Password</string>
-    <string name="signup_login">Already have an account ?</string>
+    <string name="signup_login">Joined us before ?</string>
     <string name="now">now</string>
     <string name="signup_loginclick">Sign In</string>
     <string name="signup_repeat_password">Confirm Password</string>
@@ -49,7 +50,64 @@
     <string name="signin_email">Email</string>
     <string name="signin_password">Password</string>
     <string name="signin_register">Didn\'t have an account?</string>
-    <string name="signin_registerclick">Sign In</string>
+    <string name="signin_registerclick">Sign Up</string>
 
+    <string name="home_greeting">Hello, %s</string>
+    <string name="empty_stories">Oopss ! You have no task today</string>
+    <string name="add_taskpatient">Add Task Patient</string>
+    <string name="scan">Scan....</string>
+    <string name="back">Back</string>
+    <string name="qr_code">QR Code</string>
+    <string name="check_id">Check Id</string>
+
+    <string name="profile_caretaker_nameprofile">Caretaker\'s name</string>
+
+    <string name="profile_caretaker_fullname_data">Caretaker\'s name</string>
+    <string name="profile_caretaker_fullname">Full name</string>
+    <string name="profile_caretaker_email">Email</string>
+    <string name="profile_caretaker_email_data">Caretaker\'s Email</string>
+    <string name="profile_caretaker_phonenumber">Phone Number</string>
+    <string name="profile_caretaker_phonennumber_data">Caretaker\'s phone number</string>
+    <string name="profile_caretaker_datebirth">Date Birth</string>
+    <string name="profile_caretaker_datebirth_data">Caretaker\'s Date Birth</string>
+    <string name="profile_caretaker_address">Address</string>
+    <string name="profile_caretaker_address_data">Caretaker\'s Address</string>
+    <string name="profile_caretaker_gender">Gender</string>
+    <string name="profile_caretaker_gender_data">Caretaker\'s Gender</string>
+    <string name="OK">OK</string>
+
+    <string name="add_task_messagepatient">Enter a message to patient</string>
+
+    <string name="patient_task_empty">Your tasks list is empty</string>
+    <string name="add_task_title">Your patient task list !</string>
+    <string name="add_task_time">Select Time</string>
+    <string name="add_task_date">Select Date</string>
+    <string name="add_task_done">Done</string>
+    <string name="add_task_get">Get data</string>
+    <string name="guide_title">Alzheimer Guide</string>
+    <string name="guide_information">Information about alzheimer</string>
+    <string name="caretaker_gmail_profile">Caretaker@gmail.com</string>
+
+    <string name="profile_patient_headname">Patient\'s name</string>
+    <string name="profile_patient_name">Patient\'s name</string>
+    <string name="profile_patient_heademail">patient@gmail.com</string>
+    <string name="profile_patient_fullname">Full name</string>
+    <string name="profile_patient_email">Email</string>
+    <string name="profile_patient_email_data">Patient\'s Email</string>
+    <string name="profile_patient_phonenumber">Phone Number</string>
+    <string name="profile_patient_phonenumber_data">Patient\'s phone number</string>
+    <string name="profile_patient_datebirth">Date Birth</string>
+    <string name="profile_patient_datebirth_data">Patient\'s Date Birth</string>
+    <string name="profile_patient_address">Address</string>
+    <string name="profile_patient_address_data">Patient\'s Address</string>
+    <string name="profile_patient_gender">Gender</string>
+    <string name="profile_patient_gender_data">Patient\'s Gender</string>
+    <string name="profile_patient_bloodtype">Blood Type</string>
+    <string name="profile_patient_blood_data">Patient\'s blood type</string>
+    <string name="profile_patient_editprofile">Edit Profile</string>
+
+    <string name="image_article">Image Article</string>
+    <string name="time_logo">time</string>
+    <string name="task_name">Task Name</string>
 
 </resources>

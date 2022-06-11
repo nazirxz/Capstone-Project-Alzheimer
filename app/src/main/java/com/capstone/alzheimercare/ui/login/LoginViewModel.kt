@@ -3,8 +3,8 @@ package com.capstone.alzheimercare.ui.login
 import android.util.Patterns
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
-import com.capstone.alzheimercare.domain.usecase.PatientUseCase
-import com.capstone.alzheimercare.domain.usecase.CaretakerUseCase
+import com.capstone.alzheimercare.core.domain.usecase.PatientUseCase
+import com.capstone.alzheimercare.core.domain.usecase.CaretakerUseCase
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.combine
