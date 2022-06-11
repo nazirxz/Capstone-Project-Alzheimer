@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Carezheimer</string>
 
-    <string name="onboarding_info">Kesusahan merawat pasien alzheimer ?</string>
+    <string name="onboarding_info">Difficulties in treating Alzheimer\'s patients ?</string>
     <string name="onboarding_button">Getting Started</string>
 
     <string name="signin_header">Sign In</string>
@@ -75,6 +75,9 @@
     <string name="profile_caretaker_gender">Gender</string>
     <string name="profile_caretaker_gender_data">Caretaker\'s Gender</string>
     <string name="OK">OK</string>
+
     <string name="add_task_messagepatient">Enter a message to patient</string>
+
+    <string name="patient_task_empty">Your tasks list is empty</string>
 
 </resources>

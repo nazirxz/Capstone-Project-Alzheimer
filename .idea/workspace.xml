@@ -15,7 +15,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0055d72-1fb6-482f-9e5d-0831bb5c3934" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/empty.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/empty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_patient_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_patient_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_patient_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_patient_profile.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +124,7 @@
     <property name="android-custom-viewF:/Bangkit Project Capstone/Project/app/src/main/java/com/capstone/alzheimercare/ui/login/customview/PasswordEditText.kt_SELECTED" value="PasswordEditText" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Model ML/model.tflite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -127,11 +133,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\drawable" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\assets" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\java\com\capstone\alzheimercare\ui\patient\home" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\java\com\capstone\alzheimercare\ui\caretaker\profile" />
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\xml" />
-      <recent name="F:\Bangkit Project Capstone\Project\app\src\main\java\com\capstone\alzheimercare\ui\caretaker\guide" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\Bangkit Project Capstone\Project\app\src\main\res\drawable" />
@@ -518,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654932341645</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="fixing code in signupactivity">
+      <created>1654936057127</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1654936057127</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -546,7 +559,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="adding tasks database" />
     <MESSAGE value="adding guide caretaker (work)" />
     <MESSAGE value="clean code" />
     <MESSAGE value="fixing intent fragment login activity and ui activity patient/caretaker" />
@@ -571,6 +583,7 @@
     <MESSAGE value="implement machine learning (still error v3)" />
     <MESSAGE value="implement machine learning (90% still need to work)" />
     <MESSAGE value="changing method to order by asc" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing method to order by asc" />
+    <MESSAGE value="fixing code in signupactivity" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing code in signupactivity" />
   </component>
 </project>
