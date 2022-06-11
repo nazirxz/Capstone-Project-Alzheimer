@@ -41,7 +41,7 @@
     <string name="signup_full_name">Full Name</string>
     <string name="signup_email">Email Address</string>
     <string name="signup_password">Password</string>
-    <string name="signup_login">Already have an account ?</string>
+    <string name="signup_login">Joined us before ?</string>
     <string name="now">now</string>
     <string name="signup_loginclick">Sign In</string>
     <string name="signup_repeat_password">Confirm Password</string>
@@ -75,5 +75,6 @@
     <string name="profile_caretaker_gender">Gender</string>
     <string name="profile_caretaker_gender_data">Caretaker\'s Gender</string>
     <string name="OK">OK</string>
+    <string name="add_task_messagepatient">Enter a message to patient</string>
 
 </resources>

@@ -177,8 +177,8 @@
 
         <Button
             android:id="@+id/save_changes_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="317dp"
+            android:layout_height="45dp"
             android:layout_marginTop="12dp"
             android:contentDescription="@string/save_changes"
             android:text="@string/save_changes"

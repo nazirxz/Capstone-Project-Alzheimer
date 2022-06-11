@@ -29,9 +29,6 @@ import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.nio.ByteBuffer
 import kotlin.collections.ArrayList
-import java.nio.CharBuffer
-import java.nio.FloatBuffer
-import java.nio.charset.StandardCharsets
 
 
 class AddTaskFragment : Fragment() {
@@ -44,6 +41,13 @@ class AddTaskFragment : Fragment() {
     private lateinit var from: String
     private var listDate: String = ""
     private var listTask: String = ""
+    private var input: String = ""
+    private var result: String = ""
+    private var hour: String = ""
+    val getHour = ArrayList<Int>()
+    val hourarray = ArrayList<Int>()
+    val taskarray = ArrayList<Int>()
+    val getTask = ArrayList<Int>()
 
 
     override fun onCreateView(
@@ -81,15 +85,196 @@ class AddTaskFragment : Fragment() {
                     is Resource.Loading -> { showLoading(true)
                     }
                     is Resource.Success -> {
-                        for (i in 0..task.data?.size!!) {
-                            task.data?.forEach{
+                        for (i in 0 until task.data?.size!!) {
+                            task.data.forEach{
                                 //showHour(it.timeStamp)
                                 listDate = it.timeStamp
                                 listTask = it.taskName
+
+                                //convert time to only get hour
+                                val inputFormat = SimpleDateFormat("yy-mm-dd HH:mm:ss", Locale.US)
+                                val parse = inputFormat.parse(listDate)
+                                val formatter = SimpleDateFormat("H", Locale.US)
+                                hour = formatter.format(parse)
+
+                                //convert task to int
+                                when (listTask) {
+                                    "jemur" -> {
+                                        listTask = 1.toString()
+                                    }
+                                    "jogging" -> {
+                                        listTask = 2.toString()
+                                    }
+                                    "olahraga" -> {
+                                        input = 3.toString()
+                                    }
+                                    "senam taichi" -> {
+                                        listTask = 4.toString()
+                                    }
+                                    "bejemur" -> {
+                                        listTask = 5.toString()
+                                    }
+                                    "senam poco poco" -> {
+                                        listTask = 6.toString()
+                                    }
+                                    "gosok gigi" -> {
+                                        listTask = 7.toString()
+                                    }
+                                    "main teka teki silang" -> {
+                                        listTask = 8.toString()
+                                    }
+                                    "jalan pagi" -> {
+                                        listTask = 9.toString()
+                                    }
+                                    "siram tanam" -> {
+                                        listTask = 10.toString()
+                                    }
+                                    "senam vital otak" -> {
+                                        listTask = 11.toString()
+                                    }
+                                    "senam pagi" -> {
+                                        listTask = 12.toString()
+                                    }
+                                    "mandi" -> {
+                                        listTask = 13.toString()
+                                    }
+                                    "senam pocopoco" -> {
+                                        listTask = 14.toString()
+                                    }
+                                    "sarap" -> {
+                                        listTask = 15.toString()
+                                    }
+                                    "meditasi" -> {
+                                        listTask = 16.toString()
+                                    }
+                                    "baca koran" -> {
+                                        listTask = 17.toString()
+                                    }
+                                    "sapu halaman" -> {
+                                        listTask = 18.toString()
+                                    }
+                                    "poco poco" -> {
+                                        listTask = 19.toString()
+                                    }
+                                    "sepeda" -> {
+                                        listTask = 20.toString()
+                                    }
+                                    "sapu teras" -> {
+                                        listTask = 21.toString()
+                                    }
+                                    "tari" -> {
+                                        listTask = 22.toString()
+                                    }
+                                    "minum obat" -> {
+                                        listTask = 23.toString()
+                                    }
+                                    "minum teh hangat" -> {
+                                        listTask = 24.toString()
+                                    }
+                                    "baca buku" -> {
+                                        listTask = 25.toString()
+                                    }
+                                    "dengar lagu klasik" -> {
+                                        listTask = 26.toString()
+                                    }
+                                    "minum vitamin" -> {
+                                        listTask = 27.toString()
+                                    }
+                                    "mandi pagi" -> {
+                                        listTask = 28.toString()
+                                    }
+                                    "nonton tv" -> {
+                                        listTask = 29.toString()
+                                    }
+                                    "karoke" -> {
+                                        listTask = 30.toString()
+                                    }
+                                    "makan buah" -> {
+                                        listTask = 31.toString()
+                                    }
+                                    "rajut" -> {
+                                        listTask = 32.toString()
+                                    }
+                                    "main catur" -> {
+                                        listTask = 33.toString()
+                                    }
+                                    "main tebak gambar" -> {
+                                        listTask = 34.toString()
+                                    }
+                                    "lihat foto keluarga" -> {
+                                        listTask = 35.toString()
+                                    }
+                                    "dengar lagu" -> {
+                                        listTask = 36.toString()
+                                    }
+                                    "nyanyi" -> {
+                                        listTask = 37.toString()
+                                    }
+                                    "main puzzle" -> {
+                                        listTask = 38.toString()
+                                    }
+                                    "makan siang" -> {
+                                        listTask = 39.toString()
+                                    }
+                                    "tonton tv" -> {
+                                        listTask = 40.toString()
+                                    }
+                                    "tidur siang" -> {
+                                        listTask = 41.toString()
+                                    }
+                                    "istirahat" -> {
+                                        listTask = 42.toString()
+                                    }
+                                    "kasih makan kucing" -> {
+                                        listTask = 43.toString()
+                                    }
+                                    "jalan sore" -> {
+                                        listTask = 44.toString()
+                                    }
+                                    "beri makan burung" -> {
+                                        listTask = 45.toString()
+                                    }
+                                    "mandi sore" -> {
+                                        listTask = 46.toString()
+                                    }
+                                    "tonton film" -> {
+                                        listTask = 47.toString()
+                                    }
+                                    "video call keluarga" -> {
+                                        listTask = 48.toString()
+                                    }
+                                    "bersih telinga" -> {
+                                        listTask = 49.toString()
+                                    }
+                                    "makan malam" -> {
+                                        listTask = 50.toString()
+                                    }
+                                    "makan" -> {
+                                        listTask = 51.toString()
+                                    }
+                                    "membersihkan telinga" -> {
+                                        listTask = 52.toString()
+                                    }
+                                    "tidur" -> {
+                                        listTask = 53.toString()
+                                    }
+                                    "tidur malam" -> {
+                                        listTask = 54.toString()
+                                    }
+                                    else -> listTask = 99.toString()
+                                }
+
+                                taskarray.add(listTask.toInt())
+                                hourarray.add(hour.toInt())
                             }
+                            getTask.add(taskarray[i])
+                            getHour.add(hourarray[i])
                         }
                         Log.d("list Date",listDate)
-                        Log.d("List time",listTask)
+                        Log.d("size data",task.data.size.toString())
+                        Log.d("get hour array", getHour.toString())
+                        Log.d("get task array",getTask.toString())
+
                         showLoading(false)
                     }
                     is Resource.Error -> {
@@ -143,6 +328,58 @@ class AddTaskFragment : Fragment() {
     }
 
 
+    private fun loadModel(intArray: IntArray,intArray2: IntArray): String {
+        val labels = activity?.application?.assets?.open("taskonly.txt")?.bufferedReader().use{it?.readText()}?.split("\n")
+        val array = ArrayList<Float>()
+        val model = Model.newInstance(requireContext())
+        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
+        val inputFeature1 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
+        for (j in 0 until intArray.size) {
+
+            val byteBuffer1: ByteBuffer = ByteBuffer.allocateDirect(1*4)
+            byteBuffer1.putInt(intArray[j])
+            Log.d("byte buffer input1",byteBuffer1.toString())
+
+            val byteBuffer2: ByteBuffer = ByteBuffer.allocateDirect(1*4)
+            byteBuffer2.putInt(intArray2[j])
+            Log.d("byte buffer input2",byteBuffer1.toString())
+
+            inputFeature0.loadBuffer(byteBuffer1)
+
+            inputFeature1.loadBuffer(byteBuffer2)
+
+            val outputs = model.process(inputFeature0, inputFeature1)
+            val outputFeature0 = outputs.outputFeature0AsTensorBuffer.floatArray
+
+//            Log.d("output", outputFeature0[0].toString())
+//            Log.d("output2", inputFeature1.shape.size.toString())
+
+            array.add(outputFeature0[0])
+        }
+
+        Log.d("Input Fitur", inputFeature0.toString())
+        Log.d("Input Fitur 2", inputFeature1.toString())
+        Log.d("output", array.size.toString() + " " + array.toString())
+        val max = getMax(array.toFloatArray(), intArray.size-1)
+        result = labels!![max]
+        Log.d("labels max",labels!![max])
+        Log.d("result", result)
+        model.close()
+        return result
+    }
+
+    private fun showML() {
+        binding.btnPatient.setOnClickListener {
+            val predict = loadModel(getHour.toIntArray(),getTask.toIntArray())
+
+            Log.d("predict",result)
+            MaterialAlertDialogBuilder(requireActivity())
+                .setMessage("Task patient yang sering dilakukan ialah "+predict)//+predict)
+                .setNegativeButton(getString(R.string.OK),null)
+                .show()
+        }
+    }
+
     private fun setUpTimePicker() {
         binding.btnTime.setOnClickListener {
             var hour: Int = 0
@@ -166,65 +403,11 @@ class AddTaskFragment : Fragment() {
             timePickerDialog.show()
         }
     }
+
     private fun updateLabel() {
         val formatter = SimpleDateFormat("yy-MM-dd", Locale.US)
         binding.btnDate.setText(formatter.format(calendar.time))
     }
-
-    private fun loadModel(taskdate: ArrayList<Int>, listtask:ArrayList<String>) {
-
-        val array = ArrayList<Float>()
-        val model = Model.newInstance(requireContext())
-        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
-        val inputFeature1 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
-        for (j in 0 until taskdate.size) {
-
-            val byteBuffer1: ByteBuffer = ByteBuffer.allocateDirect(1 * 4)
-            byteBuffer1.putInt(taskdate[j])
-            val byteBuffer2: ByteBuffer = ByteBuffer.allocateDirect(1 * 4)
-
-            inputFeature0.loadBuffer(byteBuffer1)
-            inputFeature1.loadBuffer(byteBuffer2)
-
-            val outputs = model.process(inputFeature0, inputFeature1)
-            val outputFeature0 = outputs.outputFeature0AsTensorBuffer.floatArray
-
-//            Log.d("output", outputFeature0[0].toString())
-//            Log.d("output2", inputFeature1.shape.size.toString())
-
-            array.add(outputFeature0[0])
-        }
-        Log.d("Input Fitur", inputFeature0.toString())
-        Log.d("Input Fitur 2", inputFeature1.toString())
-        Log.d("output", array.size.toString() + " " + array[0].toString())
-        model.close()
-
-    }
-    //39 -122 24 64
-    private fun showML() {
-        binding.btnPatient.setOnClickListener {
-            val result = loadModel(
-                arrayListOf(
-                    2, 5, 9, 2,2,2,2,9,9,9
-                ),
-                arrayListOf(
-                    "Jogging",
-                    "Jogging",
-                    "Siang",
-                    "Makan Malam"
-                )
-            )
-            MaterialAlertDialogBuilder(requireActivity())
-                .setMessage(""+result)
-                .setNegativeButton(getString(R.string.OK),null)
-                .show()
-        }
-    }
-    fun showHour(list : String): String? {
-        val formatter = SimpleDateFormat("H", Locale.US)
-        return formatter.format(list)
-    }
-
 
     private fun showLoading(isLoading: Boolean) {
         if (isLoading) {
@@ -234,5 +417,18 @@ class AddTaskFragment : Fragment() {
             binding.progressBar.visibility = View.INVISIBLE
             binding.layout.visibility = View.VISIBLE
         }
+    }
+    private fun getMax(arr: FloatArray, j: Int): Int{
+        var ind = 0
+        var min = 0.0F
+
+        for (i in 0..j)
+        {
+            if(arr[i] > min){
+                ind = i
+                min = arr[i]
+            }
+        }
+        return ind
     }
 }
