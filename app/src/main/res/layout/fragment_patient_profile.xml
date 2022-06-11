@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Patient's name"
+            android:text="@string/profile_patient_headname"
             app:layout_constraintEnd_toEndOf="@+id/ivPicture"
             app:layout_constraintStart_toStartOf="@+id/ivPicture"
             app:layout_constraintTop_toBottomOf="@+id/ivPicture" />
@@ -63,7 +63,7 @@
             style="@style/TextView.PoppinsNormal14sp020202"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Patient's name"
+            android:text="@string/profile_patient_name"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fullname_txt" />
 
@@ -73,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="patient@gmail.com"
+            android:text="@string/profile_patient_heademail"
             app:layout_constraintEnd_toEndOf="@+id/tvName"
             app:layout_constraintStart_toStartOf="@+id/tvName"
             app:layout_constraintTop_toBottomOf="@+id/tvName" />
@@ -108,7 +108,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Full name"
+            android:text="@string/profile_patient_fullname"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/logout_btn" />
 
@@ -118,7 +118,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Email"
+            android:text="@string/profile_patient_email"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvFullname" />
 
@@ -127,7 +127,7 @@
             style="@style/TextView.PoppinsNormal14sp020202"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Patient's Email"
+            android:text="@string/profile_patient_email_data"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email_txt" />
 
@@ -137,7 +137,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Phone Number"
+            android:text="@string/profile_patient_phonenumber"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvEmail" />
 
@@ -146,7 +146,7 @@
             style="@style/TextView.PoppinsNormal14sp020202"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Patient's phone number"
+            android:text="@string/profile_patient_phonenumber_data"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/phone_txt" />
 
@@ -156,7 +156,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Date Birth"
+            android:text="@string/profile_patient_datebirth"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvPhonenumber" />
 
@@ -165,7 +165,7 @@
             style="@style/TextView.PoppinsNormal14sp020202"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Patient's Date Birth"
+            android:text="@string/profile_patient_datebirth_data"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/date_txt" />
 
@@ -175,7 +175,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             style="@style/TextView.PoppinsNormal14sp8D92A3"
-            android:text="Address"
+            android:text="@string/profile_patient_address"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvDate"/>
 
@@ -184,7 +184,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/TextView.PoppinsNormal14sp020202"
-            android:text="Patient's Address"
+            android:text="@string/profile_patient_address_data"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/address_txt"/>
 
@@ -194,7 +194,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             style="@style/TextView.PoppinsNormal14sp8D92A3"
-            android:text="Gender"
+            android:text="@string/profile_patient_gender"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvAddress"/>
 
@@ -203,7 +203,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/TextView.PoppinsNormal14sp020202"
-            android:text="Patient's Gender"
+            android:text="@string/profile_patient_gender_data"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/gender_txt"/>
 
@@ -213,7 +213,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             style="@style/TextView.PoppinsNormal14sp8D92A3"
-            android:text="Blood Type"
+            android:text="@string/profile_patient_bloodtype"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvGender"/>
 
@@ -222,7 +222,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/TextView.PoppinsNormal14sp020202"
-            android:text="Patient's blood type"
+            android:text="@string/profile_patient_blood_data"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/bloodtype_txt"/>
 
@@ -232,7 +232,7 @@
             android:layout_height="45dp"
             android:layout_marginTop="24dp"
             android:backgroundTint="@color/red"
-            android:text="Edit Profile"
+            android:text="@string/profile_patient_editprofile"
             android:textAllCaps="false"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
