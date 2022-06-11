@@ -49,6 +49,8 @@ class AddTaskFragment : Fragment() {
     val taskarray = ArrayList<Int>()
     val getTask = ArrayList<Int>()
 
+    val arg = this.arguments
+    val idPatient = arg?.getString("idPatient").toString()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -61,8 +63,7 @@ class AddTaskFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         preference = MyPreference(requireContext())
-        val arg = this.arguments
-        val idPatient = arg?.getString("idPatient").toString()
+
 
         viewModel.getCaretaker(preference.getId()).observe(viewLifecycleOwner, { caretaker ->
             if (caretaker != null) {
@@ -78,6 +79,70 @@ class AddTaskFragment : Fragment() {
             }
         })
 
+
+
+        setUpDatePicker()
+        setUpTimePicker()
+        showML()
+
+        binding.btnDone.setOnClickListener {
+            lifecycleScope.launch(Dispatchers.IO) {
+                viewModel.insert(
+                    Tasks(
+                        taskName = binding.inputTask.text.toString(),
+                        timeStamp = binding.btnDate.text.toString().plus(binding.btnTime.text.toString()),
+                        idCaretaker = from,
+                        idPatient = idPatient
+                    )
+                )
+            }
+            it.hideKeyboard()
+            activity?.supportFragmentManager?.popBackStack()
+            Toast.makeText(requireContext(), "Task has been added to patient", Toast.LENGTH_SHORT)
+                .show()
+        }
+    }
+
+    private fun loadModel(intArray: IntArray,intArray2: IntArray): String {
+        val labels = activity?.application?.assets?.open("taskonly.txt")?.bufferedReader().use{it?.readText()}?.split("\n")
+        val array = ArrayList<Float>()
+        val model = Model.newInstance(requireContext())
+        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
+        val inputFeature1 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
+        for (j in 0..intArray.size-1) {
+
+            val byteBuffer1: ByteBuffer = ByteBuffer.allocateDirect(1*4)
+            byteBuffer1.putFloat(intArray[j].toFloat())
+            Log.d("byte buffer input1",byteBuffer1.toString())
+
+            val byteBuffer2: ByteBuffer = ByteBuffer.allocateDirect(1*4)
+            byteBuffer2.putFloat(intArray2[j].toFloat())
+            Log.d("byte buffer input2",byteBuffer1.toString())
+
+            inputFeature0.loadBuffer(byteBuffer1)
+            inputFeature1.loadBuffer(byteBuffer2)
+
+            val outputs = model.process(inputFeature0, inputFeature1)
+            Log.d("Outputs model process",outputs.toString())
+            val outputFeature0 = outputs.outputFeature0AsTensorBuffer.floatArray
+            Log.d("Output feature ",outputFeature0.toString())
+
+            array.add(outputFeature0[0])
+            Log.d("Array add",array.toString())
+        }
+        Log.d("Input Fitur", inputFeature0.toString())
+        Log.d("Input Fitur 2", inputFeature1.toString())
+        Log.d("output", array.size.toString() + " " + array.toString())
+        val max = getMax(array.toFloatArray(), intArray.size-1)
+        result = labels!![max]
+        Log.d("labels max", labels[max])
+        Log.d("result", result)
+        model.close()
+        return result
+    }
+
+
+    private fun showML() {
         viewModel.getTask(idPatient).observe(viewLifecycleOwner, { task ->
             Log.d("getTasks", task.data.toString())
             if (task != null) {
@@ -288,68 +353,6 @@ class AddTaskFragment : Fragment() {
                 }
             }
         })
-
-        setUpDatePicker()
-        setUpTimePicker()
-        showML()
-
-        binding.btnDone.setOnClickListener {
-            lifecycleScope.launch(Dispatchers.IO) {
-                viewModel.insert(
-                    Tasks(
-                        taskName = binding.inputTask.text.toString(),
-                        timeStamp = binding.btnDate.text.toString().plus(binding.btnTime.text.toString()),
-                        idCaretaker = from,
-                        idPatient = idPatient
-                    )
-                )
-            }
-            it.hideKeyboard()
-            activity?.supportFragmentManager?.popBackStack()
-            Toast.makeText(requireContext(), "Task has been added to patient", Toast.LENGTH_SHORT)
-                .show()
-        }
-    }
-
-    private fun loadModel(intArray: IntArray,intArray2: IntArray): String {
-        val labels = activity?.application?.assets?.open("taskonly.txt")?.bufferedReader().use{it?.readText()}?.split("\n")
-        val array = ArrayList<Float>()
-        val model = Model.newInstance(requireContext())
-        val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
-        val inputFeature1 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
-        for (j in 0..intArray.size-1) {
-
-            val byteBuffer1: ByteBuffer = ByteBuffer.allocateDirect(1*4)
-            byteBuffer1.putFloat(intArray[j].toFloat())
-            Log.d("byte buffer input1",byteBuffer1.toString())
-
-            val byteBuffer2: ByteBuffer = ByteBuffer.allocateDirect(1*4)
-            byteBuffer2.putFloat(intArray2[j].toFloat())
-            Log.d("byte buffer input2",byteBuffer1.toString())
-
-            inputFeature0.loadBuffer(byteBuffer1)
-            inputFeature1.loadBuffer(byteBuffer2)
-
-            val outputs = model.process(inputFeature0, inputFeature1)
-            Log.d("Outputs model process",outputs.toString())
-            val outputFeature0 = outputs.outputFeature0AsTensorBuffer.floatArray
-            Log.d("Output feature ",outputFeature0.toString())
-
-            array.add(outputFeature0[0])
-            Log.d("Array add",array.toString())
-        }
-        Log.d("Input Fitur", inputFeature0.toString())
-        Log.d("Input Fitur 2", inputFeature1.toString())
-        Log.d("output", array.size.toString() + " " + array.toString())
-        val max = getMax(array.toFloatArray(), intArray.size-1)
-        result = labels!![max]
-        Log.d("labels max", labels[max])
-        Log.d("result", result)
-        model.close()
-        return result
-    }
-
-    private fun showML() {
         binding.btnPatient.setOnClickListener {
             val predict = loadModel(getHour.toIntArray(),getTask.toIntArray())
 
