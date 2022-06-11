@@ -48,16 +48,15 @@ Alzheimer sufferers have difficulties taking care of themselves and families of 
 
 ### Cloud Computing
 
-1. Create a project on Google Cloud Platform
-2. Create a project on firebase
-3. Set default region as asia-southeast2(Jakarta)
-4. Set up billing allert on GCP
-5. Set up gcloud SDK
-6. Enable and set up Map API from GCP API Library
-7. Set up Map API credentials and embed it on static web
-8. Create .yaml files from root directory and deploy it via gcloud SDK
-9. Create a firestore database for the database with collection caretaker, patient, task
-10. Create a firebase storage to store user profile picture from mobile app
+1. Create a project on Google Cloud Platform & Firebase 
+2. Set default region as asia-southeast2 (Jakarta)
+3. Set up billing allert on GCP
+4. Set up gcloud SDK
+5. Enable and set up Map API from GCP API Library
+6. Set up Map API credentials and embed it on static web
+7. Create app.yaml files from root directory and deploy it via gcloud SDK
+8. Create a firestore database for the database with collection caretaker, patient, task
+9. Create a firebase storage to store user profile picture from mobile app
 10. Input machine learning model in Firebase Machine Learning
 
 ## Technology used
@@ -79,7 +78,7 @@ Alzheimer sufferers have difficulties taking care of themselves and families of 
 Google Cloud Platform Subscription : **$100**
 
 ### Design Apps :
-[Design](https://www.figma.com/file/7z7Y3YQdNuTdANBJEX8byp/Alzheimer-Project-Capstone?node-id=0%3A1)
+[DESIGN](https://www.figma.com/file/7z7Y3YQdNuTdANBJEX8byp/Alzheimer-Project-Capstone?node-id=0%3A1)
 
 ### Static landing page URL
 
