@@ -311,37 +311,20 @@ class AddTaskFragment : Fragment() {
         }
     }
 
-    private fun setUpDatePicker() {
-        binding.btnDate.setOnClickListener {
-            val dialog = DatePickerDialog(requireActivity(),
-                { view, year, month, dayOfMonth ->
-                    val _year = year.toString()
-                    val _month = if (month + 1 < 10) "0" + (month + 1) else (month + 1).toString()
-                    val _date = if (dayOfMonth < 10) "0$dayOfMonth" else dayOfMonth.toString()
-                    val _pickedDate = "$year-$_month-$_date"
-                    Log.e("PickedDate: ", "Date: $_pickedDate") //2019-02-12
-                    updateLabel()
-                }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.MONTH))
-            dialog.datePicker.minDate = System.currentTimeMillis() - 1000
-            dialog.show()
-        }
-    }
-
-
     private fun loadModel(intArray: IntArray,intArray2: IntArray): String {
         val labels = activity?.application?.assets?.open("taskonly.txt")?.bufferedReader().use{it?.readText()}?.split("\n")
         val array = ArrayList<Float>()
         val model = Model.newInstance(requireContext())
         val inputFeature0 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
         val inputFeature1 = TensorBuffer.createFixedSize(intArrayOf(1, 1), DataType.FLOAT32)
-        for (j in intArray.indices) {
+        for (j in 0..intArray.size-1) {
 
             val byteBuffer1: ByteBuffer = ByteBuffer.allocateDirect(1*4)
-            byteBuffer1.putInt(intArray[j])
+            byteBuffer1.putFloat(intArray[j].toFloat())
             Log.d("byte buffer input1",byteBuffer1.toString())
 
             val byteBuffer2: ByteBuffer = ByteBuffer.allocateDirect(1*4)
-            byteBuffer2.putInt(intArray2[j])
+            byteBuffer2.putFloat(intArray2[j].toFloat())
             Log.d("byte buffer input2",byteBuffer1.toString())
 
             inputFeature0.loadBuffer(byteBuffer1)
@@ -360,7 +343,7 @@ class AddTaskFragment : Fragment() {
         Log.d("output", array.size.toString() + " " + array.toString())
         val max = getMax(array.toFloatArray(), intArray.size-1)
         result = labels!![max]
-        Log.d("labels max",labels!![max])
+        Log.d("labels max", labels[max])
         Log.d("result", result)
         model.close()
         return result
@@ -387,11 +370,11 @@ class AddTaskFragment : Fragment() {
                 TimePickerDialog.OnTimeSetListener { timePicker, selectedHour, selectedMinute ->
                     hour = selectedHour
                     minute = selectedMinute
-                    binding.btnTime.setText(String.format(Locale.getDefault(),
+                    binding.btnTime.text = String.format(Locale.getDefault(),
                         " %02d:%02d:%02d",
                         hour,
                         minute,
-                        mseconds))
+                        mseconds)
                 }
 
             val timePickerDialog =
@@ -402,9 +385,21 @@ class AddTaskFragment : Fragment() {
         }
     }
 
-    private fun updateLabel() {
-        val formatter = SimpleDateFormat("yy-MM-dd", Locale.US)
-        binding.btnDate.setText(formatter.format(calendar.time))
+    private fun setUpDatePicker() {
+        binding.btnDate.setOnClickListener {
+            val dialog = DatePickerDialog(requireActivity(),
+                { view, year, month, dayOfMonth ->
+                    val _year = year.toString()
+                    val _month = if (month + 1 < 10) "0" + (month + 1) else (month + 1).toString()
+                    val _date = if (dayOfMonth < 10) "0$dayOfMonth" else dayOfMonth.toString()
+                    val _pickedDate = "$year-$_month-$_date"
+                    Log.e("PickedDate: ", "Date: $_pickedDate") //2019-02-12
+                    binding.btnDate.text = _pickedDate
+
+                }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.MONTH))
+            dialog.datePicker.minDate = System.currentTimeMillis() - 1000
+            dialog.show()
+        }
     }
 
     private fun showLoading(isLoading: Boolean) {
