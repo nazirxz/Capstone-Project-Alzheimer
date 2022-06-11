@@ -17,6 +17,7 @@ import com.capstone.alzheimercare.core.domain.model.Patient
 import com.capstone.alzheimercare.core.domain.model.Caretaker
 import com.capstone.alzheimercare.databinding.ActivitySignUpBinding
 import com.capstone.alzheimercare.ui.CaretakerActivity
+import com.capstone.alzheimercare.ui.PatientActivity
 import com.capstone.alzheimercare.ui.caretaker.task.AddTaskFragment
 import com.capstone.alzheimercare.ui.login.LoginActivity
 import com.capstone.alzheimercare.utils.Utility.setColor
@@ -217,8 +218,6 @@ class SignUpActivity : AppCompatActivity() {
                     1. Personal data
                     This may include your name, phone number, birth date, address, gender, and blood type.
 
-                    2. Personal medical record data
-                    This may include your medical laboratory results.
                 """.trimIndent())
                 .setPositiveButton("I agree") { _, _ ->
                     preference.setRole(role)
@@ -227,7 +226,7 @@ class SignUpActivity : AppCompatActivity() {
                     lifecycleScope.launch(Dispatchers.IO) {
                         val id = viewModel.insertPatient(patient)
                         preference.setId(id)
-                        startActivity(Intent(this@SignUpActivity, AddTaskFragment::class.java))
+                        startActivity(Intent(this@SignUpActivity, PatientActivity::class.java))
                         this@SignUpActivity.finish()
                     }
                 }

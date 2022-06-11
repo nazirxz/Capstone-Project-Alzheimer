@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Carezeimer</string>
+    <string name="app_name">Carezheimer</string>
 
     <string name="onboarding_info">Kesusahan merawat pasien alzheimer ?</string>
     <string name="onboarding_button">Getting Started</string>
