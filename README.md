@@ -25,7 +25,7 @@ Capstone for Bangkit 2022
 6. Gregorius Michael Sela (C2009F0940) - Universitas Gunadarma
 
 ## Theme : Healthcare
-### Title of Project : Mobile Application to Help Alzheimer Disease Patient (ALZHEIMER'S CARE)
+### Title of Project : Mobile Application to Help Alzheimer Disease Patient (CAREZHEIMER)
 
 ### Summary of Project
 Alzheimer sufferers have difficulties taking care of themselves and families of Alzheimer disease patients also unable to take care of Alzheimer sufferers full time. This prevents the caretakers from doing their daily activities. Alzheimer is a common form of dementia that causes a decrease in a person’s cognitive abilities which results in difficulty while carrying out routine activities. Based on the Indonesia's Ministry of Health, the number of people with Alzheimer disease in Indonesia (2013) reached one million people. That number will continue to increase every year, and is expected to reach four million people by 2050. Caring for patients is very difficult, where the lack of knowledge about how to care for patients makes the family feel stressed and in the end some of them give up on their daily activities that would affect their economic and social status. 
@@ -46,7 +46,7 @@ Alzheimer sufferers have difficulties taking care of themselves and families of 
 6. Connecting to remote (using Firestore for database and Firebase storage for file)
 7. Implement machine learning using TFLite
 
-## Cloud Computing
+### Cloud Computing
 
 1. Create a project on Google Cloud Platform
 2. Create a project on firebase
@@ -83,4 +83,4 @@ Google Cloud Platform Subscription : **$100**
 
 ### Static landing page URL
 
-[Static landing page](https://carezheimer.et.r.appspot.com/#about)
+[CAREZHEIMER](https://carezheimer.et.r.appspot.com/#about)
