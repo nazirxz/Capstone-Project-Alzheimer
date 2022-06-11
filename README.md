@@ -63,9 +63,7 @@ Alzheimer sufferers have difficulties taking care of themselves and families of 
 
 - [Room](https://developer.android.com/jetpack/androidx/releases/room)
 - [Glide](https://github.com/bumptech/glide)
-- [Lottie](https://github.com/airbnb/lottie-android)
 - [Code Scanner](https://github.com/yuriy-budiyev/code-scanner)
-- [Data2viz](https://github.com/data2viz/data2viz)
 - [Google Cloud Platform](https://cloud.google.com/gcp)
 - [Firebase](https://firebase.google.com)
 - [TensorFlow](https://www.tensorflow.org/lite/guide/android)
