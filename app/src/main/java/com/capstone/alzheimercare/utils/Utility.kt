@@ -71,12 +71,6 @@ object Utility {
         return dateTime.format(formatter)
     }
 
-    fun getDatetime(): String {
-        val dateTime = LocalDateTime.now()
-        val formatter = DateTimeFormatter.ofPattern("EEEE, d MMMM y HH:mm:ss")
-        return dateTime.format(formatter)
-    }
-
     fun String.convertEmpty(): String {
         return if (this != "") this else "-"
     }
@@ -91,40 +85,16 @@ object Utility {
         if (picture.length > 2) {
             Glide.with(context)
                 .load(picture)
-                .placeholder(R.drawable.ic_user)
-                .error(R.drawable.ic_user)
+                .placeholder(R.drawable.ic_picture_empty)
+                .error(R.drawable.ic_picture_empty)
                 .centerCrop()
                 .into(this)
         } else {
             Glide.with(context)
-                .load(R.drawable.ic_user)
+                .load(R.drawable.ic_picture_empty)
                 .centerCrop()
                 .into(this)
         }
-    }
-
-    fun String.calculateAges(): Int {
-        val months = DateFormatSymbols().months
-
-        val dateTime = LocalDate.now()
-        val now = DateTimeFormatter.ofPattern("d M y").format(dateTime).split(" ")
-        val arr = this.split(" ")
-        val day = arr[0].toInt()
-        val month = months.indexOf(arr[1])
-        val year = arr[2].toInt()
-
-        Log.d("now",now.joinToString(" "))
-        Log.d("birth",this)
-
-        var ages = now[2].toInt() - year
-        if (month < now[1].toInt()) {
-            ages-=1
-        } else if (month == now[1].toInt()) {
-            if (day < now[0].toInt()) {
-                ages -= 1
-            }
-        }
-        return ages
     }
 
 }
