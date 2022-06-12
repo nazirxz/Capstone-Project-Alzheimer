@@ -47,17 +47,15 @@ Alzheimer sufferers have difficulties taking care of themselves and families of 
 7. Implement machine learning using TFLite
 
 ### Cloud Computing
-
 1. Create a project on Google Cloud Platform & Firebase 
 2. Set default region as asia-southeast2 (Jakarta)
 3. Set up billing allert on GCP
 4. Set up gcloud SDK
-5. Enable and set up Map API from GCP API Library
-6. Set up Map API credentials and embed it on static web
-7. Create app.yaml files from root directory and deploy it via gcloud SDK
-8. Create a firestore database for the database with collection caretaker, patient, task
-9. Create a firebase storage to store user profile picture from mobile app
-10. Input machine learning model in Firebase Machine Learning
+5. Set up Map API credentials and embed it on static web
+6. Create app.yaml files from root directory and deploy it via gcloud SDK
+7. Create a firestore database for the database with collection caretaker, patient, task
+8. Create a firebase storage to store user profile picture from mobile app
+9. Input machine learning model in Firebase Machine Learning
 
 ## Technology used
 
