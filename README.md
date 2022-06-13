@@ -16,6 +16,10 @@ Capstone for Bangkit 2022
 <img alt="Figma" src="https://img.shields.io/badge/Figma-645803?logo=figma&style=plastic"/>
 </p>
 
+<p align="center">
+  <img src="https://i.ibb.co/7VWy4kK/banner-logo.png" alt="banner-logo" border="0" width="80%" height="40%">
+</p>
+
 # Member
 1. Nazirman (A2122F1546) - Politeknik Caltex Riau
 2. Farel Jevon (A2004F0391) - Institut Teknologi Sepuluh Nopember
