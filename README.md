@@ -40,7 +40,7 @@ Alzheimer sufferers have difficulties taking care of themselves and families of 
 ### Mobile Development
 1. Design UI layout (optional: Figma)
 2. Dependencies (see Technology used part)
-3. Navigation
+3. Bottom Navigation
 4. Connecting local database to UI (using ViewModel, Room, optional: Flow, Koin, Clean Architecture)
 5. Implement external feature (accessing camera and gallery, using QR code and scanner)
 6. Connecting to remote (using Firestore for database and Firebase storage for file)
